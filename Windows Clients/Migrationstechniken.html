@@ -1,0 +1,203 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<title>Migrationstechniken </title>
+						<link rel="stylesheet" href="pluginAssets/styles.css">
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">Migrationstechniken </div>
+
+						<hr>
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="Active Directory.html">Active Directory</a></li>
+                                <li><a href="Anleitung zur Einrichtung eines VPN in Windows 10.html">Einrichtung eines VPN in Windows 10</a></li>
+                                <li><a href="Anleitung zur Verwendung der Datenträgerverwaltung.html">Verwendung der Datenträgerverwaltung</a></li>
+                                <li><a href="Authentifizierungsmethoden in Windows 10 und 11.html">Authentifizierungsmethoden</a></li>
+                                <li><a href="Bedrohungsschutz-Tools.html">Bedrohungsschutz-Tools</a></li>
+                                <li ><a href="Dateisysteme verstehen.html">Dateisysteme verstehen</a></li>
+                                <li><a href="Datenträgerverwaltung in Windows 10_11.html">Datenträgerverwaltung</a></li>
+                                <li><a href="Desktop-Apps vs. Store-Apps und Alternativen.html">Desktop-Apps vs. Store-Apps</a></li>
+                                <li><a href="Edge_IE.html">Edge_IE</a></li>
+                                <li><a href="Einrichtung eines virtuellen Windows 10 in Hyper-V.html">Hyper-V Einrichtung</a></li>
+                                <li><a href="FAQ zur Freigabe von Ordnern.html">FAQ zur ordnerfreigabe</a></li>
+                                <li ><a href="Gruppenrichtlinien.html">Gruppenrichtlinien</a></li>
+                                <li><a href="In Windows 10 verfügbaren Dateisysteme.html">Verfügbaren Dateisysteme</a></li>
+                                <li><a href="In-Place-Upgrade.html">In-Place-Upgrade</a></li>
+                                <li><a href="Installation, Bereitstellung, Migration, Update.html">Installation, Bereitstellung,Update</a></li>
+                                <li class="current-page"><a href="Migrationstechniken.html">Migrationstechniken</a></li>
+                                <li><a href="NAS und übliche Zugriffsprotokolle für Windows 10_.html">NAS und Zugriffsprotokolle</a></li>
+                                <li><a href="Provisionierung.html">Provisionierung</a></li>
+                                <li><a href="Schritt-für-Schritt-Anleitung zur Konfiguration ei.html">Konfiguration WLAN</a></li>
+                                <li><a href="Softwareverteilung.html">Softwareverteilunng</a></li>
+                                <li><a href="Startmenü.html">Startmenü</a></li>
+                                <li><a href="Support Tools in Windows.html">Support-Tools</a></li>
+                                <li><a href="System-Einstellungen finden und Suche verwenden.html">System-Einstellungen</a></li>
+                                <li><a href="Systemtools.html">Systemtools</a></li>
+                                <li><a href="Übersicht der verschiedenen Speicherarten.html">Speicherarten</a></li>
+                                <li><a href="Übersicht der verschiedenen Windows 10 Editionen.html">Windows 10 Editionen</a></li>
+                                <li><a href="Unterschiedliche Windows Editionen analysieren.html">Analyse Windows 10 Editionen</a></li>
+                                <li><a href="Übersicht über Powershell, Gruppenrichtlinien und .html">Powershell</a></li>
+                            </ul>
+                        </nav>
+                        <hr>
+
+<div id="rendered-md"><h2 id="side-by-side-migration">Side-by-Side Migration</h2>
+<p>Beschreibung: Bei der Side-by-Side Migration werden Daten von einem alten System auf ein neues System übertragen. Dies erfolgt durch parallelen Betrieb beider Systeme, wobei die Daten von der alten Maschine auf die neue kopiert werden.</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Vorteile</th>
+<th style="text-align:left">Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Minimale Ausfallzeit:</strong> Das neue System kann vorbereitet werden, während das alte noch in Betrieb ist.</td>
+<td style="text-align:left"><strong>Höhere Kosten:</strong> Benötigt zwei Systeme gleichzeitig, was die Hardwarekosten erhöht.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Datenkonsistenz:</strong> Da beide Systeme parallel laufen, können Daten jederzeit abgeglichen und verifiziert werden.</td>
+<td style="text-align:left"><strong>Komplexität:</strong> Erfordert detaillierte Planung und Synchronisation.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Flexibilität:</strong> Ermöglicht einen kontrollierten und schrittweisen Übergang.</td>
+<td style="text-align:left"><strong>Potenzielle Sicherheitsrisiken:</strong> Datenübertragung zwischen zwei Systemen kann Sicherheitsrisiken mit sich bringen.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="wipe-and-load-migration">Wipe-and-Load Migration</h2>
+<p>Beschreibung: Bei der Wipe-and-Load Migration wird das bestehende System komplett gelöscht und anschließend ein neues Betriebssystem installiert. Danach werden die Daten und Anwendungen auf das neue System migriert.</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Vorteile</th>
+<th style="text-align:left">Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><strong>Saubere Installation:</strong> Alle alten Daten, Fehler und Probleme werden entfernt.</td>
+<td style="text-align:left"><strong>Längere Ausfallzeit:</strong> Das System ist während der Neuinstallation nicht verfügbar.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Bessere Performance:</strong> Durch die Neuinstallation des Betriebssystems können Performance-Probleme behoben werden.</td>
+<td style="text-align:left"><strong>Risiko von Datenverlust:</strong> Wenn die Datensicherung unvollständig ist, können Daten verloren gehen.</td>
+</tr>
+<tr>
+<td style="text-align:left"><strong>Einfachere Verwaltung:</strong> Das neue System ist von Anfang an konsistent und sauber eingerichtet.</td>
+<td style="text-align:left"><strong>Benutzeraufwand:</strong> Benutzer müssen möglicherweise ihre persönlichen Einstellungen und Daten manuell wiederherstellen.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="usmt">USMT:</h2>
+<p>Das User State Migration Tool (USMT) ist ein leistungsfähiges Migrationswerkzeug, das von Microsoft bereitgestellt wird und Teil des Windows Assessment and Deployment Kit (Windows ADK) ist. Es wird hauptsächlich in Unternehmensumgebungen verwendet, um Benutzerkonten, Betriebssystemeinstellungen und Daten von einem Windows-basierten Computer auf einen anderen zu migrieren.</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Vorteile</th>
+<th style="text-align:left">Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Flexibel und leistungsfähig, besonders für Unternehmensumgebungen geeignet.</td>
+<td style="text-align:left">Komplex in der Einrichtung und Verwendung.</td>
+</tr>
+<tr>
+<td style="text-align:left">Kann Benutzerkonten, Anwendungen und Betriebssystemeinstellungen migrieren.</td>
+<td style="text-align:left">Erfordert Administratorrechte und Kenntnisse in der Befehlszeilenverwaltung.</td>
+</tr>
+<tr>
+<td style="text-align:left">Unterstützt Skriptdateien für angepasste Migrationen.</td>
+<td style="text-align:left">-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="windows-easy-transfer">Windows Easy Transfer:</h2>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Vorteile</th>
+<th style="text-align:left">Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Einfach zu bedienen, benutzerfreundliche Oberfläche.</td>
+<td style="text-align:left">Unterstützt keine Migration von Anwendungen.</td>
+</tr>
+<tr>
+<td style="text-align:left">Geeignet für Privatanwender.</td>
+<td style="text-align:left">Nicht mehr in Windows 10 enthalten, daher veraltet.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="microsoft-deployment-toolkit-mdt">Microsoft Deployment Toolkit (MDT):</h2>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Vorteile</th>
+<th style="text-align:left">Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Umfangreiche Automatisierungsmöglichkeiten für Massenmigrationen.</td>
+<td style="text-align:left">Erfordert umfangreiche Kenntnisse in der Bereitstellung und Konfiguration.</td>
+</tr>
+<tr>
+<td style="text-align:left">Kann mit anderen Microsoft-Tools wie WDS und SCCM integriert werden.</td>
+<td style="text-align:left">Komplex und zeitaufwendig in der Einrichtung.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="beispiel-szenario-migration-von-benutzerdaten-von-einem-windows-10-rechner-auf-einen-windows-11-rechner-mit-usmt">Beispiel-Szenario: Migration von Benutzerdaten von einem Windows 10-Rechner auf einen Windows 11-Rechner mit USMT</h2>
+<p><strong>Vorbereitung</strong></p>
+<ul>
+<li>
+<p><strong>Installieren des Windows ADK:</strong> ADK für für Windows 11 herunterladen und auf beiden PCs installieren</p>
+</li>
+<li>
+<p><strong>Netzwerkzugriff sicherstellen:</strong> Stellen Sie sicher, dass sich beide PCs im selben Netzwerk befinden</p>
+</li>
+<li>
+<p><strong>Erstellen von Benutzerkonten:</strong> Auf dem Zielrechner (Windows 11) müssen die entsprechenden Nutzerkonten vorhanden sein.</p>
+</li>
+<li>
+<p>Sichern der Daten auf dem Quell-PC (Windows 10) mit Hilfe der Eingabeaufforderung (muss Administrationsrechte haben.)</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="" data-joplin-source-open="```&#10;" data-joplin-source-close="&#10;```">scanstate \\Server\USMTStore /i:migdocs.xml /i:migapp.xml /o /c /v:13 /l:C:\scanstate.log</pre><pre class="hljs"><code>scanstate \\Server\USMTStore /i:migdocs.xml /i:migapp.xml /o /c /v:13 /l:C:\scanstate.log</code></pre></div>
+<p><strong>Erklärung:</strong> <code class="inline-code">\\Server\USMTStore</code> gibt den Speicherort an, an dem die gesicherten Daten gespeichert werden sollen. <code class="inline-code">migdocs.xml</code> und <code class="inline-code">migapp.xml</code> sind Standard-USMT-Skriptdateien, die bestimmen, welche Dokumente und Anwendungen migriert werden. <code class="inline-code">/o</code> überschreibt vorhandene Daten im Speicherort. <code class="inline-code">/c</code> ignoriert nicht-kritische Fehler. <code class="inline-code">/v:13</code> gibt das Detaillierungsgrad der Protokollierung an. <code class="inline-code">/l:C:\scanstate.log</code> gibt den Pfad zur Protokolldatei an.</p>
+</li>
+</ul>
+<p><strong>Wiederherstellen der Daten auf dem Zielsystem (Windows 11):</strong></p>
+<p>Öffne Eingabeaufforderung mit Administratorrechten auf dem neuen Windows 11-Rechner.
+Die Dateien können mit dem folgenden Befehl wiederhergestellt werden:</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="" data-joplin-source-open="```&#10;" data-joplin-source-close="&#10;```">loadstate \\Server\USMTStore /i:migdocs.xml /i:migapp.xml /v:13 /l:C:\loadstate.log</pre><pre class="hljs"><code>loadstate \\Server\USMTStore /i:migdocs.<span class="hljs-keyword">xml</span> <span class="hljs-title">/i</span>:migapp.<span class="hljs-keyword">xml</span> <span class="hljs-title">/v</span>:<span class="hljs-number">13</span> /l:C:\loadstate.log</code></pre></div>
+<p><strong>Erklärung:</strong>  <code class="inline-code">\\Server\USMTStore</code> gibt den Speicherort der gesicherten Daten an. <code class="inline-code">migdocs.xml</code> und <code class="inline-code">migapp.xml</code> bestimmen, welche Daten wiederhergestellt werden. <code class="inline-code">/v:13</code> gibt das Detaillierungsgrad der Protokollierung an. <code class="inline-code">/l:C:\loadstate.log</code> gibt den Pfad zur Protokolldatei an.</p>
+<p><strong>Nachbereitung:</strong> Überprüfen Sie, ob alle Daten und Einstellungen korrekt übertragen wurden.</p>
+<p>Dies ist nur eine der vielen Möglichkeiten für dieses Szenario.</p>
+</div></div>
+					</body>
+				</html>
+			

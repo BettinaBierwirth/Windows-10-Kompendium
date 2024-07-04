@@ -1,0 +1,162 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<link rel="stylesheet" href="pluginAssets/styles.css">
+						<title>Active Directory</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">Active Directory</div>
+
+<hr>
+	<nav>
+        <ul class="nav-links">
+			<li><a href="/index.html">Home</a></li>
+            <li class="current-page"><a href="Active Directory.html">Active Directory</a></li>
+            <li><a href="Anleitung zur Einrichtung eines VPN in Windows 10.html">Einrichtung eines VPN in Windows 10</a></li>
+            <li><a href="Anleitung zur Verwendung der Datenträgerverwaltung.html">Verwendung der Datenträgerverwaltung</a></li>
+            <li><a href="Authentifizierungsmethoden in Windows 10 und 11.html">Authentifizierungsmethoden</a></li>
+            <li><a href="Bedrohungsschutz-Tools.html">Bedrohungsschutz-Tools</a></li>
+            <li><a href="Dateisysteme verstehen.html">Dateisysteme verstehen</a></li>
+            <li><a href="Datenträgerverwaltung in Windows 10_11.html">Datenträgerverwaltung</a></li>
+            <li><a href="Desktop-Apps vs. Store-Apps und Alternativen.html">Desktop-Apps vs. Store-Apps</a></li>
+            <li><a href="Edge_IE.html">Edge_IE</a></li>
+            <li><a href="Einrichtung eines virtuellen Windows 10 in Hyper-V.html">Hyper-V Einrichtung</a></li>
+            <li><a href="FAQ zur Freigabe von Ordnern.html">FAQ zur ordnerfreigabe</a></li>
+            <li><a href="Gruppenrichtlinien.html">Gruppenrichtlinien</a></li>
+            <li><a href="In Windows 10 verfügbaren Dateisysteme.html">Verfügbaren Dateisysteme</a></li>
+            <li><a href="In-Place-Upgrade.html">In-Place-Upgrade</a></li>
+            <li><a href="Installation, Bereitstellung, Migration, Update.html">Installation, Bereitstellung,Update</a></li>
+            <li><a href="Migrationstechniken.html">Migrationstechniken</a></li>
+            <li><a href="NAS und übliche Zugriffsprotokolle für Windows 10_.html">NAS und Zugriffsprotokolle</a></li>
+            <li><a href="Provisionierung.html">Provisionierung</a></li>
+            <li><a href="Schritt-für-Schritt-Anleitung zur Konfiguration ei.html">Konfiguration WLAN</a></li>
+            <li><a href="Softwareverteilung.html">Softwareverteilunng</a></li>
+            <li><a href="Startmenü.html">Startmenü</a></li>
+            <li><a href="Support Tools in Windows.html">Support-Tools</a></li>
+            <li><a href="System-Einstellungen finden und Suche verwenden.html">System-Einstellungen</a></li>
+            <li><a href="Systemtools.html">Systemtools</a></li>
+            <li><a href="Übersicht der verschiedenen Speicherarten.html">Speicherarten</a></li>
+            <li><a href="Übersicht der verschiedenen Windows 10 Editionen.html">Windows 10 Editionen</a></li>
+            <li><a href="Unterschiedliche Windows Editionen analysieren.html">Analyse Windows 10 Editionen</a></li>
+            <li><a href="Übersicht über Powershell, Gruppenrichtlinien und .html">Powershell</a></li>
+        </ul>
+    </nav>
+	<hr>
+<h2 id="was-ist-ein-active-directory">Was ist ein Active Directory?</h2>
+<p>Das Active Directory (AD) ist eine Verzeichnisdienst-Software von Microsoft, die zur Verwaltung von Benutzerinformationen, Ressourcen im Netzwerk und Sicherheitsrichtlinien verwendet wird.</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Hauptfunktionen von Active Directory</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>- Zentralisierte Verwaltung von Benutzerkonten und Gruppen<br class="jop-noMdConv"/>- Bereitstellung von Zugriffsrechten auf Ressourcen im Netzwerk<br class="jop-noMdConv"/>- Durchsetzung von Sicherheitsrichtlinien<br class="jop-noMdConv"/>- Unterstützung für Single Sign-On (SSO) und Authentifizierungsdienste</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="verwendung-von-active-directory-in-einem-netzwerk">Verwendung von Active Directory in einem Netzwerk</h2>
+<p>Active Directory wird in Unternehmen und Organisationen eingesetzt, um die Verwaltung und Sicherheit von Netzwerken zu verbessern. Es dient als zentraler Ort zur Speicherung und Verwaltung von Netzwerkressourcen und Benutzerdaten.</p>
+<h2 id="domain-controller">Domain Controller</h2>
+<p>Ein Domain Controller (DC) ist ein Server, der das Active Directory verwaltet und die Authentifizierung von Benutzern und Computern in einer Windows-Domäne ermöglicht.</p>
+<h2 id="rolle-der-active-directory-datenbank">Rolle der Active Directory Datenbank</h2>
+<p>Die Active Directory Datenbank speichert alle Informationen über Objekte in der Domäne, einschließlich Benutzer, Gruppen, Computer und Ressourcen. Sie ist entscheidend für die Funktionalität und Sicherheit der Domäne.</p>
+<h2 id="globaler-katalog-global-catalog">Globaler Katalog (Global Catalog)</h2>
+<p>Der Globale Katalog ist eine spezielle Instanz eines Domain Controllers, die eine Teilmengen der Active Directory Datenbank enthält. Er dient dazu, schnelle Suchanfragen über mehrere Domänen hinweg zu ermöglichen und ist entscheidend für die Anmeldung von Benutzern in einer Gesamtstruktur.</p>
+<hr>
+<h2 id="aufgaben-des-ad-replication-service">Aufgaben des AD Replication Service</h2>
+<p>Der AD Replication Service ist verantwortlich für die Replikation von Daten zwischen verschiedenen Domain Controllern in einem Active Directory Netzwerk, um sicherzustellen, dass alle Domänencontroller synchronisierte Kopien der Active Directory Datenbank halten.</p>
+<h2 id="domains-trees-und-forests">Domains, Trees und Forests</h2>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Begriff</th>
+<th>Beschreibung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Domain</strong></td>
+<td>Eine Domäne ist eine logische Gruppe von Netzwerkobjekten (Benutzer, Computer), die eine Sicherheitsgrenze darstellt und eine einheitliche Benutzeranmeldung ermöglicht.</td>
+</tr>
+<tr>
+<td><strong>Tree</strong></td>
+<td>Ein Tree (Baum) besteht aus mehreren Domänen, die hierarchisch miteinander verbunden sind und sich eine gemeinsame DNS-Namensstruktur teilen.</td>
+</tr>
+<tr>
+<td><strong>Forest</strong></td>
+<td>Ein Forest (Gesamtstruktur) ist eine Sammlung von Trees, die durch eine gemeinsame Schema- und Konfigurationspartition in einer Active Directory Umgebung verbunden sind.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="unterschied-zwischen-organisational-units-ous-und-container">Unterschied zwischen organisational Units (OUs) und Container</h2>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Eigenschaft</th>
+<th>Organisational Units (OUs)</th>
+<th>Container</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Verwendungszweck</strong></td>
+<td>Für die Organisation von Objekten und Anwendung von Gruppenrichtlinien verwendet.</td>
+<td>Dienen primär zur Verwaltung und Organisation von Objekten.</td>
+</tr>
+<tr>
+<td><strong>Delegierte Verwaltung</strong></td>
+<td>Können Sicherheitsrichtlinien delegieren und anwenden.</td>
+<td>Können keine Sicherheitsrichtlinien delegieren.</td>
+</tr>
+<tr>
+<td><strong>Benennung</strong></td>
+<td>Haben eigene Namen und sind leicht identifizierbar.</td>
+<td>Werden durch ihre Distinguished Names (DN) identifiziert.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="arten-von-objekten-in-active-directory">Arten von Objekten in Active Directory</h2>
+<p>In Active Directory werden verschiedene Arten von Objekten verwaltet, darunter:</p>
+<ul>
+<li>Benutzer</li>
+<li>Computer</li>
+<li>Gruppen (z.B. Sicherheitsgruppen, Verteilergruppen)</li>
+<li>Drucker</li>
+<li>Dateifreigaben</li>
+<li>Kontakte</li>
+</ul>
+<h2 id="group-policy">Group Policy</h2>
+<p>Eine Group Policy (Gruppenrichtlinie) definiert Regeln und Einstellungen für Benutzer und Computer in einer Domäne. Sie ermöglicht die zentrale Verwaltung und Konfiguration von Sicherheits- und Desktopeinstellungen.</p>
+<h2 id="zentrale-verwaltung-von-benutzern-und-gruppenrichtlinien">Zentrale Verwaltung von Benutzern und Gruppenrichtlinien</h2>
+<p>Benutzer und Gruppenrichtlinien können zentral über den Group Policy Management Editor (GPMC) verwaltet werden. Administratoren können Richtlinien erstellen, anwenden und verwalten, die dann auf Benutzer und Computer in der gesamten Domäne angewendet werden.</p>
+<h2 id="vorteile-von-active-directory-gegenüber-anderen-verzeichnisdiensten">Vorteile von Active Directory gegenüber anderen Verzeichnisdiensten</h2>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Vorteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>- Integration mit Windows-Betriebssystemen und Diensten<br class="jop-noMdConv"/>- Zentrale Verwaltung von Netzwerkressourcen und Sicherheitseinstellungen<br class="jop-noMdConv"/>- Skalierbarkeit für große Netzwerke<br class="jop-noMdConv"/>- Unterstützung für Single Sign-On (SSO) und sichere Authentifizierung</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div>
+					</body>
+				</html>
+			

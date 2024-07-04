@@ -1,0 +1,92 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<link rel="stylesheet" href="pluginAssets/styles.css">
+						<title>NAS und übliche Zugriffsprotokolle für Windows 10/11</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">NAS und übliche Zugriffsprotokolle für Windows 10/11</div>
+						<hr>
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="Active Directory.html">Active Directory</a></li>
+                                <li><a href="Anleitung zur Einrichtung eines VPN in Windows 10.html">Einrichtung eines VPN in Windows 10</a></li>
+                                <li><a href="Anleitung zur Verwendung der Datenträgerverwaltung.html">Verwendung der Datenträgerverwaltung</a></li>
+                                <li><a href="Authentifizierungsmethoden in Windows 10 und 11.html">Authentifizierungsmethoden</a></li>
+                                <li><a href="Bedrohungsschutz-Tools.html">Bedrohungsschutz-Tools</a></li>
+                                <li ><a href="Dateisysteme verstehen.html">Dateisysteme verstehen</a></li>
+                                <li><a href="Datenträgerverwaltung in Windows 10_11.html">Datenträgerverwaltung</a></li>
+                                <li><a href="Desktop-Apps vs. Store-Apps und Alternativen.html">Desktop-Apps vs. Store-Apps</a></li>
+                                <li><a href="Edge_IE.html">Edge_IE</a></li>
+                                <li><a href="Einrichtung eines virtuellen Windows 10 in Hyper-V.html">Hyper-V Einrichtung</a></li>
+                                <li><a href="FAQ zur Freigabe von Ordnern.html">FAQ zur ordnerfreigabe</a></li>
+                                <li ><a href="Gruppenrichtlinien.html">Gruppenrichtlinien</a></li>
+                                <li><a href="In Windows 10 verfügbaren Dateisysteme.html">Verfügbaren Dateisysteme</a></li>
+                                <li><a href="In-Place-Upgrade.html">In-Place-Upgrade</a></li>
+                                <li><a href="Installation, Bereitstellung, Migration, Update.html">Installation, Bereitstellung,Update</a></li>
+                                <li><a href="Migrationstechniken.html">Migrationstechniken</a></li>
+                                <li class="current-page"><a href="NAS und übliche Zugriffsprotokolle für Windows 10_.html">NAS und Zugriffsprotokolle</a></li>
+                                <li><a href="Provisionierung.html">Provisionierung</a></li>
+                                <li><a href="Schritt-für-Schritt-Anleitung zur Konfiguration ei.html">Konfiguration WLAN</a></li>
+                                <li><a href="Softwareverteilung.html">Softwareverteilunng</a></li>
+                                <li><a href="Startmenü.html">Startmenü</a></li>
+                                <li><a href="Support Tools in Windows.html">Support-Tools</a></li>
+                                <li><a href="System-Einstellungen finden und Suche verwenden.html">System-Einstellungen</a></li>
+                                <li><a href="Systemtools.html">Systemtools</a></li>
+                                <li><a href="Übersicht der verschiedenen Speicherarten.html">Speicherarten</a></li>
+                                <li><a href="Übersicht der verschiedenen Windows 10 Editionen.html">Windows 10 Editionen</a></li>
+                                <li><a href="Unterschiedliche Windows Editionen analysieren.html">Analyse Windows 10 Editionen</a></li>
+                                <li><a href="Übersicht über Powershell, Gruppenrichtlinien und .html">Powershell</a></li>
+                            </ul>
+                        </nav>
+                        <hr>
+
+<div id="rendered-md">
+<ul>
+<li><strong>NAS (Network Attached Storage)</strong>: Ein Speichersystem, das über ein Netzwerk zugänglich ist und Dateien für mehrere Benutzer bereitstellt.</li>
+<li><strong>Übliche Zugriffsprotokolle</strong>:
+<ul>
+<li>SMB (Server Message Block)</li>
+<li>NFS (Network File System)</li>
+<li>FTP (File Transfer Protocol)</li>
+</ul>
+</li>
+</ul>
+<h2 id="san-und-unterschiede-zum-nas">SAN und Unterschiede zum NAS</h2>
+<ul>
+<li><strong>SAN (Storage Area Network)</strong>: Ein spezielles Hochgeschwindigkeitsnetzwerk, das Block-Level-Datenspeicher bereitstellt.</li>
+<li><strong>Unterschiede zum NAS</strong>:
+<ul>
+<li><strong>SAN</strong>: Bietet blockbasierten Zugriff, verwendet iSCSI oder Fibre Channel, für leistungsintensive Anwendungen geeignet.</li>
+<li><strong>NAS</strong>: Bietet dateibasierten Zugriff, verwendet SMB/NFS/FTP, für einfache Dateiablage und -freigabe geeignet.</li>
+</ul>
+</li>
+</ul>
+<h2 id="cloudspeicher-und-integration-in-windows-1011">Cloudspeicher und Integration in Windows 10/11</h2>
+<ul>
+<li><strong>Cloudspeicher</strong>: Online-Speicherplatz, der über das Internet zugänglich ist, z.B. OneDrive, Google Drive, Dropbox.</li>
+<li><strong>Integration in Windows</strong>: Kann über entsprechende Apps und Dienste direkt in den Datei-Explorer eingebunden werden, sodass Cloudspeicher wie lokale Laufwerke genutzt werden können.</li>
+</ul>
+<h2 id="mounten-von-volumes-in-form-von-iso-oder-vhdx-dateien">Mounten von Volumes in Form von ISO- oder .vhd(x)-Dateien</h2>
+<p>Ja, Windows 10/11 erlaubt das Mounten von Volumes in Form von ISO-Dateien oder .vhd(x)-Dateien. Dies kann direkt über den Datei-Explorer erfolgen, indem man mit der rechten Maustaste auf die Datei klickt und “Bereitstellen” auswählt.</p>
+<h2 id="resilienz-im-zusammenhang-mit-datenspeicherung">Resilienz im Zusammenhang mit Datenspeicherung</h2>
+<p>Der Begriff “Resilienz” bezieht sich auf die Fähigkeit eines Speichersystems, Datenverlust oder -korruption zu widerstehen und die Datenverfügbarkeit auch bei Hardwareausfällen sicherzustellen. Dies wird oft durch Redundanztechniken wie RAID, Replikation und Backup erreicht.</p>
+<h2 id="tools-und-drittanbieterprogramme-zur-erweiterung-der-datenträgerverwaltung-in-windows-1011">Tools und Drittanbieterprogramme zur Erweiterung der Datenträgerverwaltung in Windows 10/11</h2>
+<ul>
+<li><strong>DiskGenius</strong></li>
+<li><strong>EaseUS Partition Master</strong></li>
+<li><strong>MiniTool Partition Wizard</strong></li>
+<li><strong>AOMEI Partition Assistant</strong></li>
+<li><strong>Paragon Hard Disk Manager</strong></li>
+<li><strong>GParted (für erweiterte Partitionierungsoptionen)</strong></li>
+</ul>
+<p>Diese Tools bieten zusätzliche Funktionen wie erweiterte Partitionierungsoptionen, Datenwiederherstellung und Migrationslösungen.</p>
+</div></div>
+					</body>
+				</html>
+			

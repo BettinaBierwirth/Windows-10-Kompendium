@@ -1,0 +1,170 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<link rel="stylesheet" href="pluginAssets/styles.css">
+						<title>Dateisysteme verstehen</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">Dateisysteme verstehen</div>
+
+						<hr>
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="Active Directory.html">Active Directory</a></li>
+                                <li><a href="Anleitung zur Einrichtung eines VPN in Windows 10.html">Einrichtung eines VPN in Windows 10</a></li>
+                                <li><a href="Anleitung zur Verwendung der Datenträgerverwaltung.html">Verwendung der Datenträgerverwaltung</a></li>
+                                <li><a href="Authentifizierungsmethoden in Windows 10 und 11.html">Authentifizierungsmethoden</a></li>
+                                <li><a href="Bedrohungsschutz-Tools.html">Bedrohungsschutz-Tools</a></li>
+                                <li class="current-page"><a href="Dateisysteme verstehen.html">Dateisysteme verstehen</a></li>
+                                <li><a href="Datenträgerverwaltung in Windows 10_11.html">Datenträgerverwaltung</a></li>
+                                <li><a href="Desktop-Apps vs. Store-Apps und Alternativen.html">Desktop-Apps vs. Store-Apps</a></li>
+                                <li><a href="Edge_IE.html">Edge_IE</a></li>
+                                <li><a href="Einrichtung eines virtuellen Windows 10 in Hyper-V.html">Hyper-V Einrichtung</a></li>
+                                <li><a href="FAQ zur Freigabe von Ordnern.html">FAQ zur ordnerfreigabe</a></li>
+                                <li><a href="Gruppenrichtlinien.html">Gruppenrichtlinien</a></li>
+                                <li><a href="In Windows 10 verfügbaren Dateisysteme.html">Verfügbaren Dateisysteme</a></li>
+                                <li><a href="In-Place-Upgrade.html">In-Place-Upgrade</a></li>
+                                <li><a href="Installation, Bereitstellung, Migration, Update.html">Installation, Bereitstellung,Update</a></li>
+                                <li><a href="Migrationstechniken.html">Migrationstechniken</a></li>
+                                <li><a href="NAS und übliche Zugriffsprotokolle für Windows 10_.html">NAS und Zugriffsprotokolle</a></li>
+                                <li><a href="Provisionierung.html">Provisionierung</a></li>
+                                <li><a href="Schritt-für-Schritt-Anleitung zur Konfiguration ei.html">Konfiguration WLAN</a></li>
+                                <li><a href="Softwareverteilung.html">Softwareverteilunng</a></li>
+                                <li><a href="Startmenü.html">Startmenü</a></li>
+                                <li><a href="Support Tools in Windows.html">Support-Tools</a></li>
+                                <li><a href="System-Einstellungen finden und Suche verwenden.html">System-Einstellungen</a></li>
+                                <li><a href="Systemtools.html">Systemtools</a></li>
+                                <li><a href="Übersicht der verschiedenen Speicherarten.html">Speicherarten</a></li>
+                                <li><a href="Übersicht der verschiedenen Windows 10 Editionen.html">Windows 10 Editionen</a></li>
+                                <li><a href="Unterschiedliche Windows Editionen analysieren.html">Analyse Windows 10 Editionen</a></li>
+                                <li><a href="Übersicht über Powershell, Gruppenrichtlinien und .html">Powershell</a></li>
+                            </ul>
+                        </nav>
+                        <hr>
+<p>Ein Dateisystem organisiert, speichert und verwaltet Daten auf einem Speichermedium. Hier sind einige der gängigsten Dateisysteme:</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Dateisystem</th>
+<th>Beschreibung</th>
+<th>Vorteile</th>
+<th>Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NTFS</td>
+<td>Standard-Dateisystem für Windows. Unterstützt große Dateien, Datensicherheit und -komprimierung.</td>
+<td>Datensicherheit, -verschlüsselung, große Dateigrößen</td>
+<td>Komplexität, eventuell langsamer als andere</td>
+</tr>
+<tr>
+<td>FAT32</td>
+<td>Älteres Dateisystem, kompatibel mit vielen Betriebssystemen und Geräten.</td>
+<td>Kompatibilität, Einfachheit</td>
+<td>Unterstützt keine großen Dateien (&gt;4 GB), keine Sicherheitsfunktionen</td>
+</tr>
+<tr>
+<td>exFAT</td>
+<td>Optimiert für Flash-Speicher und externe Festplatten.</td>
+<td>Unterstützt große Dateien, bessere Leistung auf Flash-Speichern</td>
+<td>Weniger verbreitet, keine integrierten Sicherheitsfunktionen</td>
+</tr>
+<tr>
+<td>ext4</td>
+<td>Standard-Dateisystem für Linux.</td>
+<td>Leistungsstark, zuverlässig, unterstützt große Dateien</td>
+<td>Kompatibilitätsprobleme mit Windows</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="netzwerkfreigaben-und-unc">Netzwerkfreigaben und UNC</h2>
+<h3 id="netzwerkfreigaben">Netzwerkfreigaben</h3>
+<p>Netzwerkfreigaben ermöglichen den Zugriff auf Dateien und Ordner über ein Netzwerk. Ein freigegebener Ordner kann von anderen Computern im Netzwerk verwendet werden, um Dateien zu lesen oder zu schreiben.</p>
+<h3 id="unc-universal-naming-convention">UNC (Universal Naming Convention)</h3>
+<p>UNC ist eine Standardmethode zur Identifizierung von Netzwerkressourcen. Der UNC-Pfad hat das folgende Format:</p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="" data-joplin-source-open="```&#10;" data-joplin-source-close="&#10;```">Beispiel:
+\\MeinServer\Freigabe\Dokumente\Bericht.docx</pre><pre class="hljs"><code><span class="hljs-name">Beispiel</span>:
+\\MeinServer\Freigabe\Dokumente\Bericht.docx</code></pre></div>
+<h2 id="schutz-vor-malware">Schutz vor Malware</h2>
+<p>Um ein System vor Malware zu schützen, sollten mehrere Schutzmaßnahmen implementiert werden:</p>
+<ul>
+<li><strong>Antivirensoftware</strong>: Installieren und regelmäßig aktualisieren.</li>
+<li><strong>Firewall</strong>: Aktivieren und konfigurieren.</li>
+<li><strong>Updates</strong>: Betriebssystem und Software regelmäßig aktualisieren.</li>
+<li><strong>Benutzerrechte</strong>: Minimale Rechtevergabe für Benutzerkonten.</li>
+<li><strong>Backups</strong>: Regelmäßige Datensicherung auf externen Medien.</li>
+<li><strong>Phishing-Schutz</strong>: Schulungen zur Erkennung von Phishing-Versuchen.</li>
+<li><strong>Sicherheitssoftware</strong>: Verwenden von Anti-Malware- und Anti-Spyware-Programmen.</li>
+</ul>
+<hr>
+<h2 id="vergleich-von-efs-und-bitlocker-verschlüsselung">Vergleich von EFS und BitLocker-Verschlüsselung</h2>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Eigenschaft</th>
+<th>EFS (Encrypting File System)</th>
+<th>BitLocker</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verschlüsselungsebene</td>
+<td>Datei- und Ordnerebene</td>
+<td>Volumen- und Laufwerksebene</td>
+</tr>
+<tr>
+<td>Einsatzbereich</td>
+<td>Einzelne Dateien und Ordner</td>
+<td>Gesamte Laufwerke (System- und Datenlaufwerke)</td>
+</tr>
+<tr>
+<td>Verfügbarkeit</td>
+<td>Nur in Windows Professional und höher</td>
+<td>In Windows Professional, Enterprise und höher</td>
+</tr>
+<tr>
+<td>Benutzerfreundlichkeit</td>
+<td>Einfach zu verwenden, aber manuell zu verwalten</td>
+<td>Transparent für den Benutzer, automatische Verwaltung</td>
+</tr>
+<tr>
+<td>Leistungsbeeinträchtigung</td>
+<td>Gering bis moderat</td>
+<td>Gering bis moderat</td>
+</tr>
+<tr>
+<td>Schutz vor Offline-Angriffen</td>
+<td>Nein</td>
+<td>Ja</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="funktionsweise-des-applocker">Funktionsweise des AppLocker</h2>
+<p>AppLocker ist ein Windows-Feature, das die Ausführung unerwünschter Anwendungen verhindert. Es ermöglicht Administratoren, Regeln zu definieren, welche Anwendungen und Dateien ausgeführt werden dürfen.</p>
+<h3 id="funktionsweise">Funktionsweise</h3>
+<ul>
+<li><strong>Regelbasierte Kontrolle</strong>: AppLocker verwendet Regeln, die auf Dateipfaden, Herausgeberinformationen oder Dateihashes basieren, um die Ausführung von Anwendungen zu steuern.</li>
+<li><strong>Standard- und benutzerdefinierte Regeln</strong>: Administratoren können Standardregeln verwenden oder benutzerdefinierte Regeln erstellen.</li>
+<li><strong>Audit-Modus</strong>: Überwacht und protokolliert die Anwendung von Regeln, ohne diese durchzusetzen, um zu sehen, welche Anwendungen blockiert würden.</li>
+<li><strong>Durchsetzungsmodus</strong>: Erzwingt die definierten Regeln und blockiert die Ausführung nicht zugelassener Anwendungen.
+Beispiel einer AppLocker-Regel:</li>
+<li><strong>Dateipfadregel</strong>: Nur Anwendungen im Verzeichnis <code class="inline-code">C:\Program Files</code> dürfen ausgeführt werden.</li>
+<li><strong>Herausgeberregel</strong>: Nur signierte Anwendungen von einem bestimmten Herausgeber dürfen ausgeführt werden.</li>
+<li><strong>Dateihashregel</strong>: Nur Anwendungen mit einem bestimmten Dateihash dürfen ausgeführt werden.</li>
+</ul>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="" data-joplin-source-open="```&#10;" data-joplin-source-close="&#10;```"></pre><pre class="hljs"><code></code></pre></div>
+</div></div>
+					</body>
+				</html>
+			

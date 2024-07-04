@@ -1,0 +1,196 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<title>Installation, Bereitstellung, Migration, Update</title>
+						<link rel="stylesheet" href="pluginAssets/styles.css">
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">Installation, Bereitstellung, Migration, Update</div>
+
+                        <hr>
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="Active Directory.html">Active Directory</a></li>
+                                <li><a href="Anleitung zur Einrichtung eines VPN in Windows 10.html">Einrichtung eines VPN in Windows 10</a></li>
+                                <li><a href="Anleitung zur Verwendung der Datenträgerverwaltung.html">Verwendung der Datenträgerverwaltung</a></li>
+                                <li><a href="Authentifizierungsmethoden in Windows 10 und 11.html">Authentifizierungsmethoden</a></li>
+                                <li><a href="Bedrohungsschutz-Tools.html">Bedrohungsschutz-Tools</a></li>
+                                <li ><a href="Dateisysteme verstehen.html">Dateisysteme verstehen</a></li>
+                                <li><a href="Datenträgerverwaltung in Windows 10_11.html">Datenträgerverwaltung</a></li>
+                                <li><a href="Desktop-Apps vs. Store-Apps und Alternativen.html">Desktop-Apps vs. Store-Apps</a></li>
+                                <li><a href="Edge_IE.html">Edge_IE</a></li>
+                                <li><a href="Einrichtung eines virtuellen Windows 10 in Hyper-V.html">Hyper-V Einrichtung</a></li>
+                                <li><a href="FAQ zur Freigabe von Ordnern.html">FAQ zur ordnerfreigabe</a></li>
+                                <li ><a href="Gruppenrichtlinien.html">Gruppenrichtlinien</a></li>
+                                <li><a href="In Windows 10 verfügbaren Dateisysteme.html">Verfügbaren Dateisysteme</a></li>
+                                <li><a href="In-Place-Upgrade.html">In-Place-Upgrade</a></li>
+                                <li   class="current-page"><a href="Installation, Bereitstellung, Migration, Update.html">Installation, Bereitstellung,Update</a></li>
+                                <li><a href="Migrationstechniken.html">Migrationstechniken</a></li>
+                                <li><a href="NAS und übliche Zugriffsprotokolle für Windows 10_.html">NAS und Zugriffsprotokolle</a></li>
+                                <li><a href="Provisionierung.html">Provisionierung</a></li>
+                                <li><a href="Schritt-für-Schritt-Anleitung zur Konfiguration ei.html">Konfiguration WLAN</a></li>
+                                <li><a href="Softwareverteilung.html">Softwareverteilunng</a></li>
+                                <li><a href="Startmenü.html">Startmenü</a></li>
+                                <li><a href="Support Tools in Windows.html">Support-Tools</a></li>
+                                <li><a href="System-Einstellungen finden und Suche verwenden.html">System-Einstellungen</a></li>
+                                <li><a href="Systemtools.html">Systemtools</a></li>
+                                <li><a href="Übersicht der verschiedenen Speicherarten.html">Speicherarten</a></li>
+                                <li><a href="Übersicht der verschiedenen Windows 10 Editionen.html">Windows 10 Editionen</a></li>
+                                <li><a href="Unterschiedliche Windows Editionen analysieren.html">Analyse Windows 10 Editionen</a></li>
+                                <li><a href="Übersicht über Powershell, Gruppenrichtlinien und .html">Powershell</a></li>
+                            </ul>
+                        </nav>
+                        <hr>
+
+<div id="rendered-md">
+<h2 id="begriffsklärung">Begriffsklärung</h2>
+<h3 id="abbilderimages">Abbilder/Images</h3>
+<ul>
+<li><strong>Abbilder/Images</strong> sind vollständige Kopien eines Datenträgers oder einer Partition. Sie werden oft für Backup-Zwecke oder für die Massenverteilung von Betriebssystemen verwendet.</li>
+</ul>
+<h3 id="oobe-out-of-box-experience">OOBE (Out-of-Box Experience)</h3>
+<ul>
+<li><strong>OOBE</strong> beschreibt die Erstkonfiguration eines Betriebssystems, die der Benutzer beim ersten Start des Computers durchläuft. Es umfasst die Auswahl von Sprache, Region, Zeitzone und die Einrichtung von Benutzerkonten.</li>
+</ul>
+<h3 id="pxe-preboot-execution-environment">PXE (Preboot Execution Environment)</h3>
+<ul>
+<li><strong>PXE</strong> ist ein Netzwerkprotokoll, das es einem Computer ermöglicht, über ein Netzwerk von einem entfernten Server zu booten. Es wird oft verwendet, um Betriebssysteme auf vielen Computern gleichzeitig zu installieren.</li>
+</ul>
+<h2 id="bootwim">boot.wim</h2>
+<ul>
+<li><strong>boot.wim</strong> ist eine Windows-Image-Datei, die das Windows Preinstallation Environment (WinPE) enthält. Sie wird während der Installation von Windows verwendet, um das Installationsprogramm zu starten und die Installation des Betriebssystems zu verwalten. Diese Datei kann angepasst werden, um spezifische Treiber oder Programme zu enthalten, die während der Installation benötigt werden.</li>
+</ul>
+<h2 id="adk-imaging-tools">ADK-Imaging Tools</h2>
+<h3 id="sysprepexe">sysprep.exe</h3>
+<ul>
+<li><strong>sysprep.exe</strong> (System Preparation Tool) wird verwendet, um ein Windows-Image vorzubereiten, das auf mehreren Computern bereitgestellt werden soll. Es entfernt system- und benutzerspezifische Daten und ermöglicht es, das Image auf verschiedenen Hardwarekonfigurationen zu verwenden.</li>
+</ul>
+<h3 id="oobeexe">oobe.exe</h3>
+<ul>
+<li><strong>oobe.exe</strong> wird verwendet, um die Out-of-Box Experience (OOBE) zu starten. Es ist ein Schritt innerhalb von sysprep.exe, der sicherstellt, dass der Endbenutzer die Erstkonfiguration des Betriebssystems durchlaufen kann.</li>
+</ul>
+<h2 id="windows-pe">Windows PE</h2>
+<ul>
+<li><strong>Windows PE (Windows Preinstallation Environment)</strong> ist eine minimalistische Version von Windows, die für die Installation, Bereitstellung und Reparatur von Windows-Betriebssystemen verwendet wird. Es bietet eine Plattform für die Vorbereitung und Installation eines vollständigen Windows.</li>
+</ul>
+<h2 id="antwortdateien-für-images">Antwortdateien für Images</h2>
+<ul>
+<li><strong>Antwortdateien</strong> sind XML-Dateien, die während der Windows-Installation verwendet werden, um automatische Antworten auf die Konfigurationsfragen zu geben. Sie enthalten Einstellungen für die Konfiguration des Betriebssystems, wie z.B. Benutzereinstellungen, Netzwerkeinstellungen und Installationsparameter.</li>
+</ul>
+<h3 id="beispiel-einer-antwortdatei-unattendxml">Beispiel einer Antwortdatei (unattend.xml)</h3>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="xml" data-joplin-source-open="```xml&#10;" data-joplin-source-close="&#10;```">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;unattend xmlns=&quot;urn:schemas-microsoft-com:unattend&quot;&gt;
+    &lt;settings pass=&quot;windowsPE&quot;&gt;
+        &lt;component name=&quot;Microsoft-Windows-International-Core-WinPE&quot; processorArchitecture=&quot;x86&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; language=&quot;neutral&quot; versionScope=&quot;nonSxS&quot;&gt;
+            &lt;SetupUILanguage&gt;
+                &lt;UILanguage&gt;en-US&lt;/UILanguage&gt;
+            &lt;/SetupUILanguage&gt;
+            &lt;InputLocale&gt;en-US&lt;/InputLocale&gt;
+            &lt;SystemLocale&gt;en-US&lt;/SystemLocale&gt;
+            &lt;UILanguage&gt;en-US&lt;/UILanguage&gt;
+            &lt;UserLocale&gt;en-US&lt;/UserLocale&gt;
+        &lt;/component&gt;
+    &lt;/settings&gt;
+    &lt;settings pass=&quot;specialize&quot;&gt;
+        &lt;component name=&quot;Microsoft-Windows-Shell-Setup&quot; processorArchitecture=&quot;x86&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; language=&quot;neutral&quot; versionScope=&quot;nonSxS&quot;&gt;
+            &lt;ComputerName&gt;PC-%RAND%&lt;/ComputerName&gt;
+            &lt;ProductKey&gt;XXXXX-XXXXX-XXXXX-XXXXX-XXXXX&lt;/ProductKey&gt;
+            &lt;TimeZone&gt;Pacific Standard Time&lt;/TimeZone&gt;
+        &lt;/component&gt;
+    &lt;/settings&gt;
+    &lt;settings pass=&quot;oobeSystem&quot;&gt;
+        &lt;component name=&quot;Microsoft-Windows-International-Core&quot; processorArchitecture=&quot;x86&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; language=&quot;neutral&quot; versionScope=&quot;nonSxS&quot;&gt;
+            &lt;InputLocale&gt;en-US&lt;/InputLocale&gt;
+            &lt;SystemLocale&gt;en-US&lt;/SystemLocale&gt;
+            &lt;UILanguage&gt;en-US&lt;/UILanguage&gt;
+            &lt;UserLocale&gt;en-US&lt;/UserLocale&gt;
+        &lt;/component&gt;
+        &lt;component name=&quot;Microsoft-Windows-Shell-Setup&quot; processorArchitecture=&quot;x86&quot; publicKeyToken=&quot;31bf3856ad364e35&quot; language=&quot;neutral&quot; versionScope=&quot;nonSxS&quot;&gt;
+            &lt;OOBE&gt;
+                &lt;HideEULAPage&gt;true&lt;/HideEULAPage&gt;
+                &lt;NetworkLocation&gt;Work&lt;/NetworkLocation&gt;
+                &lt;ProtectYourPC&gt;3&lt;/ProtectYourPC&gt;
+            &lt;/OOBE&gt;
+            &lt;UserAccounts&gt;
+                &lt;AdministratorPassword&gt;
+                    &lt;Value&gt;Password123&lt;/Value&gt;
+                    &lt;PlainText&gt;true&lt;/PlainText&gt;
+                &lt;/AdministratorPassword&gt;
+                &lt;LocalAccounts&gt;
+                    &lt;LocalAccount&gt;
+                        &lt;Password&gt;
+                            &lt;Value&gt;Password123&lt;/Value&gt;
+                            &lt;PlainText&gt;true&lt;/PlainText&gt;
+                        &lt;/Password&gt;
+                        &lt;Description&gt;Local user account&lt;/Description&gt;
+                        &lt;DisplayName&gt;User&lt;/DisplayName&gt;
+                        &lt;Group&gt;Administrators&lt;/Group&gt;
+                        &lt;Name&gt;User&lt;/Name&gt;
+                    &lt;/LocalAccount&gt;
+                &lt;/LocalAccounts&gt;
+            &lt;/UserAccounts&gt;
+        &lt;/component&gt;
+    &lt;/settings&gt;
+&lt;/unattend&gt;</pre><pre class="hljs"><code><span class="hljs-meta">&lt;?xml version=<span class="hljs-string">&quot;1.0&quot;</span> encoding=<span class="hljs-string">&quot;utf-8&quot;</span>?&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">unattend</span> <span class="hljs-attr">xmlns</span>=<span class="hljs-string">&quot;urn:schemas-microsoft-com:unattend&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">settings</span> <span class="hljs-attr">pass</span>=<span class="hljs-string">&quot;windowsPE&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">component</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;Microsoft-Windows-International-Core-WinPE&quot;</span> <span class="hljs-attr">processorArchitecture</span>=<span class="hljs-string">&quot;x86&quot;</span> <span class="hljs-attr">publicKeyToken</span>=<span class="hljs-string">&quot;31bf3856ad364e35&quot;</span> <span class="hljs-attr">language</span>=<span class="hljs-string">&quot;neutral&quot;</span> <span class="hljs-attr">versionScope</span>=<span class="hljs-string">&quot;nonSxS&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">SetupUILanguage</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">UILanguage</span>&gt;</span>en-US<span class="hljs-tag">&lt;/<span class="hljs-name">UILanguage</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">SetupUILanguage</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">InputLocale</span>&gt;</span>en-US<span class="hljs-tag">&lt;/<span class="hljs-name">InputLocale</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">SystemLocale</span>&gt;</span>en-US<span class="hljs-tag">&lt;/<span class="hljs-name">SystemLocale</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">UILanguage</span>&gt;</span>en-US<span class="hljs-tag">&lt;/<span class="hljs-name">UILanguage</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">UserLocale</span>&gt;</span>en-US<span class="hljs-tag">&lt;/<span class="hljs-name">UserLocale</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">component</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">settings</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">settings</span> <span class="hljs-attr">pass</span>=<span class="hljs-string">&quot;specialize&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">component</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;Microsoft-Windows-Shell-Setup&quot;</span> <span class="hljs-attr">processorArchitecture</span>=<span class="hljs-string">&quot;x86&quot;</span> <span class="hljs-attr">publicKeyToken</span>=<span class="hljs-string">&quot;31bf3856ad364e35&quot;</span> <span class="hljs-attr">language</span>=<span class="hljs-string">&quot;neutral&quot;</span> <span class="hljs-attr">versionScope</span>=<span class="hljs-string">&quot;nonSxS&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ComputerName</span>&gt;</span>PC-%RAND%<span class="hljs-tag">&lt;/<span class="hljs-name">ComputerName</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">ProductKey</span>&gt;</span>XXXXX-XXXXX-XXXXX-XXXXX-XXXXX<span class="hljs-tag">&lt;/<span class="hljs-name">ProductKey</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">TimeZone</span>&gt;</span>Pacific Standard Time<span class="hljs-tag">&lt;/<span class="hljs-name">TimeZone</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">component</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">settings</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">settings</span> <span class="hljs-attr">pass</span>=<span class="hljs-string">&quot;oobeSystem&quot;</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">component</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;Microsoft-Windows-International-Core&quot;</span> <span class="hljs-attr">processorArchitecture</span>=<span class="hljs-string">&quot;x86&quot;</span> <span class="hljs-attr">publicKeyToken</span>=<span class="hljs-string">&quot;31bf3856ad364e35&quot;</span> <span class="hljs-attr">language</span>=<span class="hljs-string">&quot;neutral&quot;</span> <span class="hljs-attr">versionScope</span>=<span class="hljs-string">&quot;nonSxS&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">InputLocale</span>&gt;</span>en-US<span class="hljs-tag">&lt;/<span class="hljs-name">InputLocale</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">SystemLocale</span>&gt;</span>en-US<span class="hljs-tag">&lt;/<span class="hljs-name">SystemLocale</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">UILanguage</span>&gt;</span>en-US<span class="hljs-tag">&lt;/<span class="hljs-name">UILanguage</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">UserLocale</span>&gt;</span>en-US<span class="hljs-tag">&lt;/<span class="hljs-name">UserLocale</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">component</span>&gt;</span>
+        <span class="hljs-tag">&lt;<span class="hljs-name">component</span> <span class="hljs-attr">name</span>=<span class="hljs-string">&quot;Microsoft-Windows-Shell-Setup&quot;</span> <span class="hljs-attr">processorArchitecture</span>=<span class="hljs-string">&quot;x86&quot;</span> <span class="hljs-attr">publicKeyToken</span>=<span class="hljs-string">&quot;31bf3856ad364e35&quot;</span> <span class="hljs-attr">language</span>=<span class="hljs-string">&quot;neutral&quot;</span> <span class="hljs-attr">versionScope</span>=<span class="hljs-string">&quot;nonSxS&quot;</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">OOBE</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">HideEULAPage</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">HideEULAPage</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">NetworkLocation</span>&gt;</span>Work<span class="hljs-tag">&lt;/<span class="hljs-name">NetworkLocation</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">ProtectYourPC</span>&gt;</span>3<span class="hljs-tag">&lt;/<span class="hljs-name">ProtectYourPC</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">OOBE</span>&gt;</span>
+            <span class="hljs-tag">&lt;<span class="hljs-name">UserAccounts</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">AdministratorPassword</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Value</span>&gt;</span>Password123<span class="hljs-tag">&lt;/<span class="hljs-name">Value</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">PlainText</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">PlainText</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">AdministratorPassword</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">LocalAccounts</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">LocalAccount</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Password</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">Value</span>&gt;</span>Password123<span class="hljs-tag">&lt;/<span class="hljs-name">Value</span>&gt;</span>
+                            <span class="hljs-tag">&lt;<span class="hljs-name">PlainText</span>&gt;</span>true<span class="hljs-tag">&lt;/<span class="hljs-name">PlainText</span>&gt;</span>
+                        <span class="hljs-tag">&lt;/<span class="hljs-name">Password</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Description</span>&gt;</span>Local user account<span class="hljs-tag">&lt;/<span class="hljs-name">Description</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">DisplayName</span>&gt;</span>User<span class="hljs-tag">&lt;/<span class="hljs-name">DisplayName</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Group</span>&gt;</span>Administrators<span class="hljs-tag">&lt;/<span class="hljs-name">Group</span>&gt;</span>
+                        <span class="hljs-tag">&lt;<span class="hljs-name">Name</span>&gt;</span>User<span class="hljs-tag">&lt;/<span class="hljs-name">Name</span>&gt;</span>
+                    <span class="hljs-tag">&lt;/<span class="hljs-name">LocalAccount</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">LocalAccounts</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">UserAccounts</span>&gt;</span>
+        <span class="hljs-tag">&lt;/<span class="hljs-name">component</span>&gt;</span>
+    <span class="hljs-tag">&lt;/<span class="hljs-name">settings</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">unattend</span>&gt;</span></code></pre></div>
+</div></div>
+					</body>
+				</html>
+			

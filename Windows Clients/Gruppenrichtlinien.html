@@ -1,0 +1,126 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<title>Gruppenrichtlinien</title>
+						<link rel="stylesheet" href="pluginAssets/styles.css">
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">Gruppenrichtlinien</div>
+
+
+						<hr>
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="Active Directory.html">Active Directory</a></li>
+                                <li><a href="Anleitung zur Einrichtung eines VPN in Windows 10.html">Einrichtung eines VPN in Windows 10</a></li>
+                                <li><a href="Anleitung zur Verwendung der Datenträgerverwaltung.html">Verwendung der Datenträgerverwaltung</a></li>
+                                <li><a href="Authentifizierungsmethoden in Windows 10 und 11.html">Authentifizierungsmethoden</a></li>
+                                <li><a href="Bedrohungsschutz-Tools.html">Bedrohungsschutz-Tools</a></li>
+                                <li ><a href="Dateisysteme verstehen.html">Dateisysteme verstehen</a></li>
+                                <li><a href="Datenträgerverwaltung in Windows 10_11.html">Datenträgerverwaltung</a></li>
+                                <li><a href="Desktop-Apps vs. Store-Apps und Alternativen.html">Desktop-Apps vs. Store-Apps</a></li>
+                                <li><a href="Edge_IE.html">Edge_IE</a></li>
+                                <li><a href="Einrichtung eines virtuellen Windows 10 in Hyper-V.html">Hyper-V Einrichtung</a></li>
+                                <li><a href="FAQ zur Freigabe von Ordnern.html">FAQ zur ordnerfreigabe</a></li>
+                                <li class="current-page"><a href="Gruppenrichtlinien.html">Gruppenrichtlinien</a></li>
+                                <li><a href="In Windows 10 verfügbaren Dateisysteme.html">Verfügbaren Dateisysteme</a></li>
+                                <li><a href="In-Place-Upgrade.html">In-Place-Upgrade</a></li>
+                                <li><a href="Installation, Bereitstellung, Migration, Update.html">Installation, Bereitstellung,Update</a></li>
+                                <li><a href="Migrationstechniken.html">Migrationstechniken</a></li>
+                                <li><a href="NAS und übliche Zugriffsprotokolle für Windows 10_.html">NAS und Zugriffsprotokolle</a></li>
+                                <li><a href="Provisionierung.html">Provisionierung</a></li>
+                                <li><a href="Schritt-für-Schritt-Anleitung zur Konfiguration ei.html">Konfiguration WLAN</a></li>
+                                <li><a href="Softwareverteilung.html">Softwareverteilunng</a></li>
+                                <li><a href="Startmenü.html">Startmenü</a></li>
+                                <li><a href="Support Tools in Windows.html">Support-Tools</a></li>
+                                <li><a href="System-Einstellungen finden und Suche verwenden.html">System-Einstellungen</a></li>
+                                <li><a href="Systemtools.html">Systemtools</a></li>
+                                <li><a href="Übersicht der verschiedenen Speicherarten.html">Speicherarten</a></li>
+                                <li><a href="Übersicht der verschiedenen Windows 10 Editionen.html">Windows 10 Editionen</a></li>
+                                <li><a href="Unterschiedliche Windows Editionen analysieren.html">Analyse Windows 10 Editionen</a></li>
+                                <li><a href="Übersicht über Powershell, Gruppenrichtlinien und .html">Powershell</a></li>
+                            </ul>
+                        </nav>
+                        <hr>
+						<div id="rendered-md">
+<p>Gruppenrichtlinien sind ein zentrales Verwaltungstool in Windows, das Administratoren ermöglicht, Konfigurationen und Sicherheitseinstellungen für Benutzer und Computer in einem Netzwerk zu steuern.</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Funktionen und Unterschiede</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>- Verteilen von Einstellungen für Benutzer und Computer<br class="jop-noMdConv"/>- Sicherheitsrichtlinien durchsetzen<br class="jop-noMdConv"/>- Verwalten von Desktop-Einstellungen<br class="jop-noMdConv"/>- Anwendungs- und Netzwerkeinstellungen zentral steuern</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="lokale-vs-domänenrichtlinien">Lokale vs. Domänenrichtlinien</h3>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Eigenschaft</th>
+<th>Lokale Gruppenrichtlinien</th>
+<th>Domänenrichtlinien</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verwaltungsort</td>
+<td>Auf einem einzelnen Computer</td>
+<td>Über eine zentrale Active Directory Domäne</td>
+</tr>
+<tr>
+<td>Umfang</td>
+<td>Nur auf einem Computer gültig</td>
+<td>Für alle Computer und Benutzer in der Domäne</td>
+</tr>
+<tr>
+<td>Verwaltungsflexibilität</td>
+<td>Weniger zentralisiert, einfacher zu ändern</td>
+<td>Strenge Kontrolle und zentrale Verwaltung</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="registry">Registry</h2>
+<p>Die Windows-Registry ist eine zentrale Datenbank, in der Konfigurationsinformationen für das Betriebssystem, Anwendungen und Hardwaregeräte gespeichert sind.</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Funktionen und Nutzung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>- Speichert Konfigurationseinstellungen<br class="jop-noMdConv"/>- Ermöglicht Anpassungen des Betriebssystems und der Anwendungen<br class="jop-noMdConv"/>- Wird für die Installation von Software und Treibern genutzt</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="windows-registrierungseditor">Windows Registrierungseditor</h3>
+<p>Um den Registrierungseditor zu öffnen:</p>
+<ol>
+<li>Suchen Sie nach “regedit” im Startmenü und öffnen Sie den Registrierungseditor.</li>
+</ol>
+<h3 id="vorsichtsmaßnahmen-beim-bearbeiten-der-registrierung">Vorsichtsmaßnahmen beim Bearbeiten der Registrierung</h3>
+<ul>
+<li><strong>Sicherung</strong>: Vor jeder Änderung eine Sicherung der Registrierung erstellen.</li>
+<li><strong>Genauigkeit</strong>: Nur Änderungen vornehmen, wenn Sie die Auswirkungen verstehen.</li>
+<li><strong>Berechtigungen</strong>: Vorsicht beim Ändern von Berechtigungen, um Beschädigungen zu vermeiden.</li>
+<li><strong>Fachwissen</strong>: Komplexe Änderungen nur mit fundiertem Wissen oder unter Anleitung eines Experten durchführen.</li>
+</ul>
+</div></div>
+					</body>
+				</html>
+			

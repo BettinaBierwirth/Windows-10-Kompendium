@@ -1,0 +1,133 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<link rel="stylesheet" href="pluginAssets/styles.css">
+						<title>Datenträgerverwaltung in Windows 10/11</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">Datenträgerverwaltung in Windows 10/11</div>
+
+						<hr>
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="Active Directory.html">Active Directory</a></li>
+                                <li><a href="Anleitung zur Einrichtung eines VPN in Windows 10.html">Einrichtung eines VPN in Windows 10</a></li>
+                                <li><a href="Anleitung zur Verwendung der Datenträgerverwaltung.html">Verwendung der Datenträgerverwaltung</a></li>
+                                <li><a href="Authentifizierungsmethoden in Windows 10 und 11.html">Authentifizierungsmethoden</a></li>
+                                <li><a href="Bedrohungsschutz-Tools.html">Bedrohungsschutz-Tools</a></li>
+                                <li ><a href="Dateisysteme verstehen.html">Dateisysteme verstehen</a></li>
+                                <li class="current-page"><a href="Datenträgerverwaltung in Windows 10_11.html">Datenträgerverwaltung</a></li>
+                                <li><a href="Desktop-Apps vs. Store-Apps und Alternativen.html">Desktop-Apps vs. Store-Apps</a></li>
+                                <li><a href="Edge_IE.html">Edge_IE</a></li>
+                                <li><a href="Einrichtung eines virtuellen Windows 10 in Hyper-V.html">Hyper-V Einrichtung</a></li>
+                                <li><a href="FAQ zur Freigabe von Ordnern.html">FAQ zur ordnerfreigabe</a></li>
+                                <li><a href="Gruppenrichtlinien.html">Gruppenrichtlinien</a></li>
+                                <li><a href="In Windows 10 verfügbaren Dateisysteme.html">Verfügbaren Dateisysteme</a></li>
+                                <li><a href="In-Place-Upgrade.html">In-Place-Upgrade</a></li>
+                                <li><a href="Installation, Bereitstellung, Migration, Update.html">Installation, Bereitstellung,Update</a></li>
+                                <li><a href="Migrationstechniken.html">Migrationstechniken</a></li>
+                                <li><a href="NAS und übliche Zugriffsprotokolle für Windows 10_.html">NAS und Zugriffsprotokolle</a></li>
+                                <li><a href="Provisionierung.html">Provisionierung</a></li>
+                                <li><a href="Schritt-für-Schritt-Anleitung zur Konfiguration ei.html">Konfiguration WLAN</a></li>
+                                <li><a href="Softwareverteilung.html">Softwareverteilunng</a></li>
+                                <li><a href="Startmenü.html">Startmenü</a></li>
+                                <li><a href="Support Tools in Windows.html">Support-Tools</a></li>
+                                <li><a href="System-Einstellungen finden und Suche verwenden.html">System-Einstellungen</a></li>
+                                <li><a href="Systemtools.html">Systemtools</a></li>
+                                <li><a href="Übersicht der verschiedenen Speicherarten.html">Speicherarten</a></li>
+                                <li><a href="Übersicht der verschiedenen Windows 10 Editionen.html">Windows 10 Editionen</a></li>
+                                <li><a href="Unterschiedliche Windows Editionen analysieren.html">Analyse Windows 10 Editionen</a></li>
+                                <li><a href="Übersicht über Powershell, Gruppenrichtlinien und .html">Powershell</a></li>
+                            </ul>
+                        </nav>
+                        <hr>
+<h2 id="was-ist-die-datenträgerverwaltung-in-windows-1011-und-welche-aufgabe-kann-sie-erfüllen">Was ist die Datenträgerverwaltung in Windows 10/11 und welche Aufgabe kann sie erfüllen?</h2>
+<p>Die Datenträgerverwaltung ist ein integriertes Werkzeug in Windows 10/11, das zur Verwaltung von Festplatten und deren Partitionen dient. Mit diesem Tool können Benutzer Aufgaben wie das Erstellen, Formatieren, Löschen und Vergrößern/Verkleinern von Partitionen durchführen. Es ermöglicht auch das Einrichten von neuen Festplatten und die Konvertierung von Datenträgern zwischen verschiedenen Formaten.</p>
+<hr>
+<h2 id="unterschiede-zwischen-basisdatenträgern-und-dynamischen-datenträgern-in-windows">Unterschiede zwischen Basisdatenträgern und dynamischen Datenträgern in Windows</h2>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Eigenschaft</th>
+<th>Basisdatenträger</th>
+<th>Dynamische Datenträger</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Partitionsschema</td>
+<td>MBR oder GPT</td>
+<td>Dynamische Volumes</td>
+</tr>
+<tr>
+<td>Art der Volumes</td>
+<td>Primäre, Erweiterte, Logische Partitionen</td>
+<td>Simple, Spanned, Striped, Mirrored, RAID-5</td>
+</tr>
+<tr>
+<td>Konvertierung</td>
+<td>Einfach zu dynamisch</td>
+<td>Muss formatiert werden, um zu Basis zu konvertieren</td>
+</tr>
+<tr>
+<td>Betriebssystemkompatibilität</td>
+<td>Unterstützt von allen Windows-Versionen</td>
+<td>Unterstützt nur von Windows 2000 und neuer</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="partitionen-und-volumes">Partitionen und Volumes</h2>
+<ul>
+<li><strong>Partitionen</strong>: Logische Unterteilungen eines physischen Datenträgers, die das Betriebssystem als separate Laufwerke sieht.</li>
+<li><strong>Volumes</strong>: Ein Volume kann eine oder mehrere Partitionen umfassen und wird vom Betriebssystem als eine einzelne Einheit behandelt.</li>
+</ul>
+<h2 id="eigenschaften-der-datenträgertypen-ssd-und-hdd">Eigenschaften der Datenträgertypen SSD und HDD</h2>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Eigenschaft</th>
+<th>SSD (Solid State Drive)</th>
+<th>HDD (Hard Disk Drive)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Geschwindigkeit</td>
+<td>Sehr schnell (geringere Zugriffszeiten)</td>
+<td>Langsamer (höhere Zugriffszeiten)</td>
+</tr>
+<tr>
+<td>Mechanik</td>
+<td>Keine beweglichen Teile</td>
+<td>Mechanische Teile (Scheiben und Schreib-/Lesekopf)</td>
+</tr>
+<tr>
+<td>Haltbarkeit</td>
+<td>Höher (weniger anfällig für physische Schäden)</td>
+<td>Niedriger (anfälliger für Stöße und Vibrationen)</td>
+</tr>
+<tr>
+<td>Preis</td>
+<td>Teurer pro GB</td>
+<td>Günstiger pro GB</td>
+</tr>
+<tr>
+<td>Kapazität</td>
+<td>Geringere maximale Kapazität</td>
+<td>Höhere maximale Kapazität</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div></div>
+					</body>
+				</html>
+			

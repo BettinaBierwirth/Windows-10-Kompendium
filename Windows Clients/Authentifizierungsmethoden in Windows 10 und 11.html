@@ -1,0 +1,201 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<link rel="stylesheet" href="pluginAssets/styles.css">
+						<title>Authentifizierungsmethoden in Windows 10 und 11</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">Authentifizierungsmethoden in Windows 10 und 11</div>
+						<hr>
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="Active Directory.html">Active Directory</a></li>
+                                <li><a href="Anleitung zur Einrichtung eines VPN in Windows 10.html">Einrichtung eines VPN in Windows 10</a></li>
+                                <li><a href="Anleitung zur Verwendung der Datenträgerverwaltung.html">Verwendung der Datenträgerverwaltung</a></li>
+                                <li class="current-page"><a href="Authentifizierungsmethoden in Windows 10 und 11.html">Authentifizierungsmethoden</a></li>
+                                <li><a href="Bedrohungsschutz-Tools.html">Bedrohungsschutz-Tools</a></li>
+                                <li><a href="Dateisysteme verstehen.html">Dateisysteme verstehen</a></li>
+                                <li><a href="Datenträgerverwaltung in Windows 10_11.html">Datenträgerverwaltung</a></li>
+                                <li><a href="Desktop-Apps vs. Store-Apps und Alternativen.html">Desktop-Apps vs. Store-Apps</a></li>
+                                <li><a href="Edge_IE.html">Edge_IE</a></li>
+                                <li><a href="Einrichtung eines virtuellen Windows 10 in Hyper-V.html">Hyper-V Einrichtung</a></li>
+                                <li><a href="FAQ zur Freigabe von Ordnern.html">FAQ zur ordnerfreigabe</a></li>
+                                <li><a href="Gruppenrichtlinien.html">Gruppenrichtlinien</a></li>
+                                <li><a href="In Windows 10 verfügbaren Dateisysteme.html">Verfügbaren Dateisysteme</a></li>
+                                <li><a href="In-Place-Upgrade.html">In-Place-Upgrade</a></li>
+                                <li><a href="Installation, Bereitstellung, Migration, Update.html">Installation, Bereitstellung,Update</a></li>
+                                <li><a href="Migrationstechniken.html">Migrationstechniken</a></li>
+                                <li><a href="NAS und übliche Zugriffsprotokolle für Windows 10_.html">NAS und Zugriffsprotokolle</a></li>
+                                <li><a href="Provisionierung.html">Provisionierung</a></li>
+                                <li><a href="Schritt-für-Schritt-Anleitung zur Konfiguration ei.html">Konfiguration WLAN</a></li>
+                                <li><a href="Softwareverteilung.html">Softwareverteilunng</a></li>
+                                <li><a href="Startmenü.html">Startmenü</a></li>
+                                <li><a href="Support Tools in Windows.html">Support-Tools</a></li>
+                                <li><a href="System-Einstellungen finden und Suche verwenden.html">System-Einstellungen</a></li>
+                                <li><a href="Systemtools.html">Systemtools</a></li>
+                                <li><a href="Übersicht der verschiedenen Speicherarten.html">Speicherarten</a></li>
+                                <li><a href="Übersicht der verschiedenen Windows 10 Editionen.html">Windows 10 Editionen</a></li>
+                                <li><a href="Unterschiedliche Windows Editionen analysieren.html">Analyse Windows 10 Editionen</a></li>
+                                <li><a href="Übersicht über Powershell, Gruppenrichtlinien und .html">Powershell</a></li>
+                            </ul>
+                        </nav>
+                        <hr>
+<div id="rendered-md">
+<h3 id="accounttypen">Accounttypen</h3>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Accounttyp</th>
+<th>Beschreibung</th>
+<th>Nutzung</th>
+<th>Vorteile</th>
+<th>Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Lokales Konto</td>
+<td>Ein Benutzerkonto, das nur auf einem einzelnen Computer existiert.</td>
+<td>Einzelbenutzerumgebungen, Computer ohne Internetverbindung</td>
+<td>Unabhängig von Internetverbindung</td>
+<td>Keine Synchronisierung mit anderen Geräten</td>
+</tr>
+<tr>
+<td>Microsoft-Konto</td>
+<td>Ein Online-Konto, das mehrere Geräte und Dienste synchronisiert.</td>
+<td>Geräteübergreifende Nutzung, Cloud-Dienste</td>
+<td>Synchronisation von Einstellungen und Daten</td>
+<td>Abhängigkeit von Microsoft-Diensten</td>
+</tr>
+<tr>
+<td>Domänenkonto</td>
+<td>Ein Konto, das von einer Organisation über Active Directory verwaltet wird.</td>
+<td>Unternehmensumgebungen, Netzwerke</td>
+<td>Zentrale Verwaltung, erhöhte Sicherheit</td>
+<td>Erfordert Serverinfrastruktur</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="windows-hello">Windows Hello</h3>
+<p>Windows Hello bietet biometrische Authentifizierungsmethoden wie Gesichtserkennung, Fingerabdruck und PIN. Diese Methode erhöht die Sicherheit und Benutzerfreundlichkeit.</p>
+<h4 id="funktionsweise-von-windows-hello">Funktionsweise von Windows Hello</h4>
+<ul>
+<li><strong>Gesichtserkennung</strong>: Verwendet die Kamera, um das Gesicht des Benutzers zu erkennen und zu authentifizieren.</li>
+<li><strong>Fingerabdruck</strong>: Verwendet einen Fingerabdruckscanner, um den Benutzer zu authentifizieren.</li>
+<li><strong>PIN</strong>: Eine numerische PIN, die lokal auf dem Gerät gespeichert wird.</li>
+</ul>
+<h4 id="konfiguration-von-windows-hello">Konfiguration von Windows Hello</h4>
+<ol>
+<li>
+<p><strong>Gesichtserkennung einrichten</strong></p>
+<ol>
+<li>Öffnen Sie <strong>Einstellungen</strong>.</li>
+<li>Gehen Sie zu <strong>Konten</strong> &gt; <strong>Anmeldeoptionen</strong>.</li>
+<li>Wählen Sie <strong>Windows Hello Gesichtserkennung</strong> und klicken Sie auf <strong>Einrichten</strong>.</li>
+<li>Folgen Sie den Anweisungen, um Ihr Gesicht zu registrieren.</li>
+</ol>
+</li>
+<li>
+<p><strong>Fingerabdruck einrichten</strong></p>
+<ol>
+<li>Öffnen Sie <strong>Einstellungen</strong>.</li>
+<li>Gehen Sie zu <strong>Konten</strong> &gt; <strong>Anmeldeoptionen</strong>.</li>
+<li>Wählen Sie <strong>Windows Hello Fingerabdruck</strong> und klicken Sie auf <strong>Einrichten</strong>.</li>
+<li>Folgen Sie den Anweisungen, um Ihren Fingerabdruck zu registrieren.</li>
+</ol>
+</li>
+<li>
+<p><strong>PIN einrichten</strong></p>
+<ol>
+<li>Öffnen Sie <strong>Einstellungen</strong>.</li>
+<li>Gehen Sie zu <strong>Konten</strong> &gt; <strong>Anmeldeoptionen</strong>.</li>
+<li>Wählen Sie <strong>PIN</strong> und klicken Sie auf <strong>Hinzufügen</strong>.</li>
+<li>Folgen Sie den Anweisungen, um eine PIN zu erstellen.</li>
+</ol>
+</li>
+</ol>
+<h3 id="benutzerkontensteuerung-uac">Benutzerkontensteuerung (UAC)</h3>
+<p>Die Benutzerkontensteuerung (User Account Control, UAC) ist ein Sicherheitsfeature, das verhindert, dass unbefugte Änderungen an Ihrem System vorgenommen werden. UAC fordert den Benutzer zur Bestätigung auf, wenn administrative Berechtigungen erforderlich sind.</p>
+<h4 id="funktionsweise-von-uac">Funktionsweise von UAC</h4>
+<ul>
+<li><strong>Standardbenutzer</strong>: Erhalten eine Aufforderung zur Eingabe eines Administrator-Kennworts, wenn administrative Aufgaben ausgeführt werden.</li>
+<li><strong>Administratoren</strong>: Erhalten eine Bestätigungsaufforderung zur Durchführung administrativer Aufgaben.</li>
+</ul>
+<h4 id="konfiguration-von-uac">Konfiguration von UAC</h4>
+<ol>
+<li>Öffnen Sie <strong>Systemsteuerung</strong>.</li>
+<li>Navigieren Sie zu <strong>Benutzerkonten</strong> &gt; <strong>Benutzerkonten</strong> &gt; <strong>Einstellungen der Benutzerkontensteuerung ändern</strong>.</li>
+<li>Stellen Sie den Schieberegler auf das gewünschte Benachrichtigungsniveau.</li>
+</ol>
+<h3 id="unterschiede-zwischen-windows-10-und-windows-11">Unterschiede zwischen Windows 10 und Windows 11</h3>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Windows 10</th>
+<th>Windows 11</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Microsoft-Konto</td>
+<td>Optionale Anmeldung</td>
+<td>Stärkere Integration und bevorzugte Anmeldung</td>
+</tr>
+<tr>
+<td>Windows Hello</td>
+<td>Basis-Biometrie-Unterstützung</td>
+<td>Erweiterte Biometrie-Optionen, verbesserte Leistung</td>
+</tr>
+<tr>
+<td>Benutzerkontensteuerung (UAC)</td>
+<td>Standardmäßige Sicherheitsabfragen</td>
+<td>Verbesserte Sicherheitsabfragen und -benachrichtigungen</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="zusammenfassung">Zusammenfassung</h3>
+<p>In Windows 10 und 11 gibt es mehrere Authentifizierungsmethoden, die auf verschiedene Bedürfnisse und Sicherheitsanforderungen zugeschnitten sind. Lokale Konten bieten Unabhängigkeit, während Microsoft-Konten und Domänenkonten erweiterte Synchronisierungs- und Verwaltungsfunktionen bieten. Windows Hello bietet eine bequeme und sichere biometrische Authentifizierung, während UAC dazu beiträgt, unbefugte Änderungen am System zu verhindern.</p>
+<p>Die folgende Tabelle bietet einen Überblick über die Konfigurationsschritte für die verschiedenen Authentifizierungsmethoden:</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Authentifizierungsmethode</th>
+<th>Konfigurationsschritte</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Windows Hello Gesichtserkennung</td>
+<td>Einstellungen &gt; Konten &gt; Anmeldeoptionen &gt; Windows Hello Gesichtserkennung &gt; Einrichten</td>
+</tr>
+<tr>
+<td>Windows Hello Fingerabdruck</td>
+<td>Einstellungen &gt; Konten &gt; Anmeldeoptionen &gt; Windows Hello Fingerabdruck &gt; Einrichten</td>
+</tr>
+<tr>
+<td>Windows Hello PIN</td>
+<td>Einstellungen &gt; Konten &gt; Anmeldeoptionen &gt; PIN &gt; Hinzufügen</td>
+</tr>
+<tr>
+<td>Benutzerkontensteuerung (UAC)</td>
+<td>Systemsteuerung &gt; Benutzerkonten &gt; Benutzerkonten &gt; Einstellungen der Benutzerkontensteuerung ändern</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Diese Dokumentation kann als Grundlage für die Verwaltung und Konfiguration von Authentifizierungsmethoden in Windows 10 und 11 dienen.</p>
+</div></div>
+					</body>
+				</html>
+			

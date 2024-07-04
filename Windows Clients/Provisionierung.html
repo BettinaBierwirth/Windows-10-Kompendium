@@ -1,0 +1,75 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<title>Provisionierung</title>
+						<link rel="stylesheet" href="pluginAssets/styles.css">
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">Provisionierung</div>
+
+						<hr>
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="Active Directory.html">Active Directory</a></li>
+                                <li><a href="Anleitung zur Einrichtung eines VPN in Windows 10.html">Einrichtung eines VPN in Windows 10</a></li>
+                                <li><a href="Anleitung zur Verwendung der Datenträgerverwaltung.html">Verwendung der Datenträgerverwaltung</a></li>
+                                <li><a href="Authentifizierungsmethoden in Windows 10 und 11.html">Authentifizierungsmethoden</a></li>
+                                <li><a href="Bedrohungsschutz-Tools.html">Bedrohungsschutz-Tools</a></li>
+                                <li ><a href="Dateisysteme verstehen.html">Dateisysteme verstehen</a></li>
+                                <li><a href="Datenträgerverwaltung in Windows 10_11.html">Datenträgerverwaltung</a></li>
+                                <li><a href="Desktop-Apps vs. Store-Apps und Alternativen.html">Desktop-Apps vs. Store-Apps</a></li>
+                                <li><a href="Edge_IE.html">Edge_IE</a></li>
+                                <li><a href="Einrichtung eines virtuellen Windows 10 in Hyper-V.html">Hyper-V Einrichtung</a></li>
+                                <li><a href="FAQ zur Freigabe von Ordnern.html">FAQ zur ordnerfreigabe</a></li>
+                                <li ><a href="Gruppenrichtlinien.html">Gruppenrichtlinien</a></li>
+                                <li><a href="In Windows 10 verfügbaren Dateisysteme.html">Verfügbaren Dateisysteme</a></li>
+                                <li><a href="In-Place-Upgrade.html">In-Place-Upgrade</a></li>
+                                <li><a href="Installation, Bereitstellung, Migration, Update.html">Installation, Bereitstellung,Update</a></li>
+                                <li><a href="Migrationstechniken.html">Migrationstechniken</a></li>
+                                <li><a href="NAS und übliche Zugriffsprotokolle für Windows 10_.html">NAS und Zugriffsprotokolle</a></li>
+                                <li  class="current-page"><a href="Provisionierung.html">Provisionierung</a></li>
+                                <li><a href="Schritt-für-Schritt-Anleitung zur Konfiguration ei.html">Konfiguration WLAN</a></li>
+                                <li><a href="Softwareverteilung.html">Softwareverteilunng</a></li>
+                                <li><a href="Startmenü.html">Startmenü</a></li>
+                                <li><a href="Support Tools in Windows.html">Support-Tools</a></li>
+                                <li><a href="System-Einstellungen finden und Suche verwenden.html">System-Einstellungen</a></li>
+                                <li><a href="Systemtools.html">Systemtools</a></li>
+                                <li><a href="Übersicht der verschiedenen Speicherarten.html">Speicherarten</a></li>
+                                <li><a href="Übersicht der verschiedenen Windows 10 Editionen.html">Windows 10 Editionen</a></li>
+                                <li><a href="Unterschiedliche Windows Editionen analysieren.html">Analyse Windows 10 Editionen</a></li>
+                                <li><a href="Übersicht über Powershell, Gruppenrichtlinien und .html">Powershell</a></li>
+                            </ul>
+                        </nav>
+                        <hr>
+
+
+<div id="rendered-md"><h3 id="allgemeines">Allgemeines</h3>
+<p>Provisionierung bezeichnet den Prozess der Vorbereitung und Konfiguration eines IT-Systems, um es einsatzbereit zu machen. Es ist zudem möglich mittels Provisionierung weitere Komponenten eines Windows 10 oder 11 Systems zu installieren oder zu konfigurieren.</p>
+<h3 id="provisionierung-von-windows-10">Provisionierung von Windows 10</h3>
+<p>Microsoft stellt einige Tools zur Provisionierung zur Verfügung.</p>
+<p><strong>Windows Imaging and Configuration Designer (Windows ICD):</strong></p>
+<p>Ein Tool innerhalb des Windows Assessment and Deployment Kit (ADK), das Administratoren hilft, Bereitstellungspakete zu erstellen.</p>
+<p><strong>Windows Autopilot:</strong></p>
+<p>Ein Cloud-basierter Dienst, der eine schnelle Bereitstellung und Konfiguration neuer Geräte ermöglicht. Geräte können direkt vom Hersteller an den Endbenutzer versendet werden, der nur noch die Anmeldung durchführen muss.</p>
+<p><strong>Microsoft Deployment Toolkit (MDT):</strong></p>
+<p>Ein kostenloses Tool von Microsoft, das für die Bereitstellung von Windows-Betriebssystemen und Anwendungen verwendet wird. MDT automatisiert viele Schritte des Bereitstellungsprozesses.</p>
+<p><strong>System Center Configuration Manager (SCCM):</strong></p>
+<p>Ein Verwaltungstool, das umfassende Lösungen für die Verwaltung von Windows-Computern bietet, einschließlich der Bereitstellung von Betriebssystemen, Software und Updates.</p>
+<p><strong>Erstellung eines Bereitstellungspakets:</strong></p>
+<p>Mithilfe von Windows ICD oder MDT wird ein Paket erstellt, das alle notwendigen Einstellungen und Anwendungen enthält.</p>
+<p><strong>Bereitstellung des Betriebssystems:</strong></p>
+<p>Das Bereitstellungspaket wird auf den Zielcomputern installiert, entweder über das Netzwerk (PXE-Boot), USB-Laufwerke oder direkt über den Hersteller.</p>
+<p><strong>Post-Bereitstellungskonfiguration:</strong></p>
+<p>Nach der Installation werden zusätzliche Konfigurationen vorgenommen, wie z.B. die Installation von Sicherheitsupdates und die Konfiguration von Gruppenrichtlinien.</p>
+<h3 id="provisionierung-von-windows-11">Provisionierung von Windows 11</h3>
+<p>Wie auch bereits bei Windows 10 funktioniert die Provisionierung unter Windows 11 nach demselben Prinzip. Windows 11 hat aber eine erweiterte Unterstützung durch den Windows Autopilot, die sich durch eine bessere User-Experience auszeichnet, da einige neue Funktionen hinzugekommen sind die den Prozess vereinfachen. Neu ist die Integration mit Microsoft Endpoint Manager. Dies ermöglicht eine einheitliche Verwaltung von Geräten, Anwendungen und Daten.  Windows 11 führt zusätzliche Sicherheitsmaßnahmen ein, wie z.B. den obligatorischen Einsatz von TPM 2.0 (Trusted Platform Module) und erweiterte Schutzmechanismen gegen Malware und Ransomware.</p>
+<p>Der Prozess ist ebenfalls ähnlich. Administratoren erstellen Bereitstellungspakete und konfigurieren Autopilot-Profile mithilfe von Windows ICD, MDT oder Endpoint Manager.  Neue Geräte können direkt an den Endbenutzer versendet werden. Nach dem Einschalten und der Anmeldung beim Unternehmensnetzwerk wird das Bereitstellungspaket automatisch angewendet. Windows 11 führt den Benutzer durch eine vereinfachte und intuitive Einrichtung, während im Hintergrund die notwendigen Anwendungen und Konfigurationen installiert werden. Nach der Bereitstellung werden Geräte kontinuierlich über Endpoint Manager oder SCCM verwaltet, um sicherzustellen, dass sie den aktuellen Sicherheits- und Konfigurationsrichtlinien entsprechen.</p>
+</div></div>
+					</body>
+				</html>
+			

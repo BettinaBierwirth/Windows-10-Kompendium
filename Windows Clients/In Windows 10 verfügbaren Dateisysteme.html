@@ -1,0 +1,168 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<title>In Windows 10 verfügbaren Dateisysteme</title>
+						<link rel="stylesheet" href="pluginAssets/styles.css">
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">In Windows 10 verfügbaren Dateisysteme</div>
+
+                        <hr>
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="Active Directory.html">Active Directory</a></li>
+                                <li><a href="Anleitung zur Einrichtung eines VPN in Windows 10.html">Einrichtung eines VPN in Windows 10</a></li>
+                                <li><a href="Anleitung zur Verwendung der Datenträgerverwaltung.html">Verwendung der Datenträgerverwaltung</a></li>
+                                <li><a href="Authentifizierungsmethoden in Windows 10 und 11.html">Authentifizierungsmethoden</a></li>
+                                <li><a href="Bedrohungsschutz-Tools.html">Bedrohungsschutz-Tools</a></li>
+                                <li ><a href="Dateisysteme verstehen.html">Dateisysteme verstehen</a></li>
+                                <li><a href="Datenträgerverwaltung in Windows 10_11.html">Datenträgerverwaltung</a></li>
+                                <li><a href="Desktop-Apps vs. Store-Apps und Alternativen.html">Desktop-Apps vs. Store-Apps</a></li>
+                                <li><a href="Edge_IE.html">Edge_IE</a></li>
+                                <li><a href="Einrichtung eines virtuellen Windows 10 in Hyper-V.html">Hyper-V Einrichtung</a></li>
+                                <li><a href="FAQ zur Freigabe von Ordnern.html">FAQ zur ordnerfreigabe</a></li>
+                                <li ><a href="Gruppenrichtlinien.html">Gruppenrichtlinien</a></li>
+                                <li class="current-page"><a href="In Windows 10 verfügbaren Dateisysteme.html">Verfügbaren Dateisysteme</a></li>
+                                <li><a href="In-Place-Upgrade.html">In-Place-Upgrade</a></li>
+                                <li><a href="Installation, Bereitstellung, Migration, Update.html">Installation, Bereitstellung,Update</a></li>
+                                <li><a href="Migrationstechniken.html">Migrationstechniken</a></li>
+                                <li><a href="NAS und übliche Zugriffsprotokolle für Windows 10_.html">NAS und Zugriffsprotokolle</a></li>
+                                <li><a href="Provisionierung.html">Provisionierung</a></li>
+                                <li><a href="Schritt-für-Schritt-Anleitung zur Konfiguration ei.html">Konfiguration WLAN</a></li>
+                                <li><a href="Softwareverteilung.html">Softwareverteilunng</a></li>
+                                <li><a href="Startmenü.html">Startmenü</a></li>
+                                <li><a href="Support Tools in Windows.html">Support-Tools</a></li>
+                                <li><a href="System-Einstellungen finden und Suche verwenden.html">System-Einstellungen</a></li>
+                                <li><a href="Systemtools.html">Systemtools</a></li>
+                                <li><a href="Übersicht der verschiedenen Speicherarten.html">Speicherarten</a></li>
+                                <li><a href="Übersicht der verschiedenen Windows 10 Editionen.html">Windows 10 Editionen</a></li>
+                                <li><a href="Unterschiedliche Windows Editionen analysieren.html">Analyse Windows 10 Editionen</a></li>
+                                <li><a href="Übersicht über Powershell, Gruppenrichtlinien und .html">Powershell</a></li>
+                            </ul>
+                        </nav>
+                        <hr>
+
+<div id="rendered-md">
+<h3 id="verfügbare-dateisysteme">Verfügbare Dateisysteme</h3>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Dateisystem</th>
+<th>Beschreibung</th>
+<th>Nutzung</th>
+<th>Technische Begrenzung</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>NTFS</td>
+<td>Standard-Dateisystem für Windows. Unterstützt große Dateien, Datensicherheit und -komprimierung.</td>
+<td>Systemlaufwerke, Partitionen mit wichtigen Daten</td>
+<td>Maximale Dateigröße: 16 EB</td>
+</tr>
+<tr>
+<td>FAT32</td>
+<td>Älteres Dateisystem, kompatibel mit vielen Betriebssystemen und Geräten.</td>
+<td>Externe Festplatten, USB-Sticks, ältere Systeme</td>
+<td>Maximale Dateigröße: 4 GB, Maximale Partition: 32 GB</td>
+</tr>
+<tr>
+<td>exFAT</td>
+<td>Optimiert für Flash-Speicher und externe Festplatten.</td>
+<td>Große USB-Sticks, externe Festplatten</td>
+<td>Maximale Dateigröße: 16 EB</td>
+</tr>
+<tr>
+<td>ReFS</td>
+<td>Resilient File System, für hohe Datenintegrität und Ausfallsicherheit.</td>
+<td>Hochverfügbarkeits- und Datenintegritätsszenarien</td>
+<td>Nicht bootfähig, weniger weit verbreitet</td>
+</tr>
+<tr>
+<td>ext4</td>
+<td>Standard-Dateisystem für Linux.</td>
+<td>Dual-Boot-Systeme mit Linux</td>
+<td>Eingeschränkte Windows-Kompatibilität</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="nutzung-der-dateisysteme">Nutzung der Dateisysteme</h3>
+<ol>
+<li>
+<p><strong>NTFS</strong></p>
+<ul>
+<li><strong>Vorteile</strong>: Datensicherheit, -verschlüsselung, Wiederherstellungspunkte, große Dateigrößen.</li>
+<li><strong>Einsatzbereiche</strong>: Systemlaufwerke, Partitionen mit wichtigen Daten.</li>
+<li><strong>Technische Begrenzung</strong>: Unterstützt bis zu 16 EB Dateigröße.</li>
+</ul>
+</li>
+<li>
+<p><strong>FAT32</strong></p>
+<ul>
+<li><strong>Vorteile</strong>: Kompatibilität, Einfachheit.</li>
+<li><strong>Einsatzbereiche</strong>: Externe Festplatten, USB-Sticks, ältere Systeme.</li>
+<li><strong>Technische Begrenzung</strong>: Unterstützt keine Dateien größer als 4 GB, maximale Partitionsgröße 32 GB.</li>
+</ul>
+</li>
+<li>
+<p><strong>exFAT</strong></p>
+<ul>
+<li><strong>Vorteile</strong>: Unterstützt große Dateien, bessere Leistung auf Flash-Speichern.</li>
+<li><strong>Einsatzbereiche</strong>: Große USB-Sticks, externe Festplatten.</li>
+<li><strong>Technische Begrenzung</strong>: Unterstützt Dateien bis zu 16 EB.</li>
+</ul>
+</li>
+<li>
+<p><strong>ReFS</strong></p>
+<ul>
+<li><strong>Vorteile</strong>: Hohe Datenintegrität, Ausfallsicherheit, Skalierbarkeit.</li>
+<li><strong>Einsatzbereiche</strong>: Hochverfügbarkeits- und Datenintegritätsszenarien.</li>
+<li><strong>Technische Begrenzung</strong>: Nicht bootfähig, weniger weit verbreitet.</li>
+</ul>
+</li>
+<li>
+<p><strong>ext4</strong></p>
+<ul>
+<li><strong>Vorteile</strong>: Leistungsstark, zuverlässig, unterstützt große Dateien.</li>
+<li><strong>Einsatzbereiche</strong>: Dual-Boot-Systeme mit Linux.</li>
+<li><strong>Technische Begrenzung</strong>: Kompatibilitätsprobleme mit Windows.</li>
+</ul>
+</li>
+</ol>
+<h3 id="entscheidungsbaum-für-dateisysteme">Entscheidungsbaum für Dateisysteme</h3>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="markdown" data-joplin-source-open="```markdown&#10;" data-joplin-source-close="&#10;```">```mermaid
+graph TD;
+    A[Benötige ich Kompatibilität mit verschiedenen Betriebssystemen?] --&gt; |Ja| B[FAT32 oder exFAT];
+    A --&gt; |Nein| C[Möchte ich hohe Datensicherheit und -integrität?];
+    B --&gt; D[Ist die maximale Dateigröße größer als 4 GB?];
+    D --&gt; |Ja| E[exFAT];
+    D --&gt; |Nein| F[FAT32];
+    C --&gt; |Ja| G[ReFS];
+    C --&gt; |Nein| H[Benötige ich ein Standard-Dateisystem für Windows?];
+    H --&gt; |Ja| I[NTFS];
+    H --&gt; |Nein| J[Verwende ich ein Dual-Boot-System mit Linux?];
+    J --&gt; |Ja| K[ext4];
+    J --&gt; |Nein| L[NTFS];</pre><pre class="hljs"><code><span class="hljs-code">```mermaid
+graph TD;
+    A[Benötige ich Kompatibilität mit verschiedenen Betriebssystemen?] --&gt; |Ja| B[FAT32 oder exFAT];
+    A --&gt; |Nein| C[Möchte ich hohe Datensicherheit und -integrität?];
+    B --&gt; D[Ist die maximale Dateigröße größer als 4 GB?];
+    D --&gt; |Ja| E[exFAT];
+    D --&gt; |Nein| F[FAT32];
+    C --&gt; |Ja| G[ReFS];
+    C --&gt; |Nein| H[Benötige ich ein Standard-Dateisystem für Windows?];
+    H --&gt; |Ja| I[NTFS];
+    H --&gt; |Nein| J[Verwende ich ein Dual-Boot-System mit Linux?];
+    J --&gt; |Ja| K[ext4];
+    J --&gt; |Nein| L[NTFS];</span></code></pre></div>
+</div></div>
+					</body>
+				</html>
+			

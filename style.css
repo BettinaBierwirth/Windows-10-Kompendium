@@ -1,0 +1,90 @@
+/* Reset default margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Avenir', 'Arial', sans-serif;
+}
+
+/* Basic styling for header and footer */
+header, footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f0f0f0;
+}
+
+/* Main title styling */
+header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 2em;
+}
+
+/* Styling for the navigation */
+nav {
+    max-width: calc(2/3 * 100%); /* Limiting width to 2/3 of the viewport width */
+    margin: 20px auto; /* Centering the nav container and adding space */
+}
+
+.nav-links {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+    list-style-type: none;
+    padding: 0;
+}
+
+.nav-links li {
+    padding: 0; 
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px; 
+    padding: 10px; 
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    text-align: center;
+    transition: background-color 0.3s ease; 
+    font-size: 0.9rem;
+}
+
+.nav-links a:hover {
+    background-color: #ccc;
+    color: #fff;
+}
+
+.nav-links .current-page a {
+    background-color: #2fc3f4;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        grid-template-columns: 1fr;
+    }
+}
+/* Sticky footer */
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+main {
+    min-height: calc(100vh - 2 * (10px + 10px)); /* Adjust for header and footer padding */
+}
+
+footer {
+    position: sticky;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px;
+}

@@ -1,0 +1,110 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<title>Übersicht über Powershell, Gruppenrichtlinien und Registry</title>
+						<link rel="stylesheet" href="pluginAssets/styles.css">
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">Übersicht über Powershell, Gruppenrichtlinien und Registry</div>
+
+						<hr>
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="Active Directory.html">Active Directory</a></li>
+                                <li><a href="Anleitung zur Einrichtung eines VPN in Windows 10.html">Einrichtung eines VPN in Windows 10</a></li>
+                                <li><a href="Anleitung zur Verwendung der Datenträgerverwaltung.html">Verwendung der Datenträgerverwaltung</a></li>
+                                <li><a href="Authentifizierungsmethoden in Windows 10 und 11.html">Authentifizierungsmethoden</a></li>
+                                <li><a href="Bedrohungsschutz-Tools.html">Bedrohungsschutz-Tools</a></li>
+                                <li ><a href="Dateisysteme verstehen.html">Dateisysteme verstehen</a></li>
+                                <li><a href="Datenträgerverwaltung in Windows 10_11.html">Datenträgerverwaltung</a></li>
+                                <li><a href="Desktop-Apps vs. Store-Apps und Alternativen.html">Desktop-Apps vs. Store-Apps</a></li>
+                                <li><a href="Edge_IE.html">Edge_IE</a></li>
+                                <li><a href="Einrichtung eines virtuellen Windows 10 in Hyper-V.html">Hyper-V Einrichtung</a></li>
+                                <li><a href="FAQ zur Freigabe von Ordnern.html">FAQ zur ordnerfreigabe</a></li>
+                                <li ><a href="Gruppenrichtlinien.html">Gruppenrichtlinien</a></li>
+                                <li><a href="In Windows 10 verfügbaren Dateisysteme.html">Verfügbaren Dateisysteme</a></li>
+                                <li><a href="In-Place-Upgrade.html">In-Place-Upgrade</a></li>
+                                <li><a href="Installation, Bereitstellung, Migration, Update.html">Installation, Bereitstellung,Update</a></li>
+                                <li><a href="Migrationstechniken.html">Migrationstechniken</a></li>
+                                <li><a href="NAS und übliche Zugriffsprotokolle für Windows 10_.html">NAS und Zugriffsprotokolle</a></li>
+                                <li><a href="Provisionierung.html">Provisionierung</a></li>
+                                <li><a href="Schritt-für-Schritt-Anleitung zur Konfiguration ei.html">Konfiguration WLAN</a></li>
+                                <li><a href="Softwareverteilung.html">Softwareverteilunng</a></li>
+                                <li><a href="Startmenü.html">Startmenü</a></li>
+                                <li><a href="Support Tools in Windows.html">Support-Tools</a></li>
+                                <li><a href="System-Einstellungen finden und Suche verwenden.html">System-Einstellungen</a></li>
+                                <li><a href="Systemtools.html">Systemtools</a></li>
+                                <li><a href="Übersicht der verschiedenen Speicherarten.html">Speicherarten</a></li>
+                                <li><a href="Übersicht der verschiedenen Windows 10 Editionen.html">Windows 10 Editionen</a></li>
+                                <li ><a href="Unterschiedliche Windows Editionen analysieren.html">Analyse Windows 10 Editionen</a></li>
+                                <li class="current-page"><a href="Übersicht über Powershell, Gruppenrichtlinien und .html">Powershell</a></li>
+                            </ul>
+                        </nav>
+                        <hr>
+
+<div id="rendered-md">
+<h2 id="powershell">Powershell</h2>
+<p>Die Powershell ist eine leistungsstarke Befehlszeilen-Shell und Skriptsprache von Microsoft, die zur Automatisierung und Verwaltung von Windows-Systemen verwendet wird.</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Funktionen und Möglichkeiten</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>- Ausführen von Befehlen und Skripten<br class="jop-noMdConv"/>- Verwalten von Systemeinstellungen und Diensten<br class="jop-noMdConv"/>- Automatisierung von wiederkehrenden Aufgaben<br class="jop-noMdConv"/>- Verwaltung von Dateien und Ordnern<br class="jop-noMdConv"/>- Interaktion mit der Windows-Registry</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h3 id="grundlegende-befehle-in-powershell">Grundlegende Befehle in Powershell</h3>
+<ol>
+<li>
+<p><strong>Öffnen der Powershell</strong>:</p>
+<ul>
+<li>Suchen Sie nach “Powershell” im Startmenü und öffnen Sie die Anwendung.</li>
+</ul>
+</li>
+<li>
+<p><strong>Beispielhafte Cmdlets:</strong></p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Cmdlet</th>
+<th>Funktion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code class="inline-code">Get-ChildItem</code></td>
+<td>Listet die Inhalte eines Verzeichnisses auf (ähnlich wie <code class="inline-code">dir</code> in cmd).</td>
+</tr>
+<tr>
+<td><code class="inline-code">Set-ItemProperty</code></td>
+<td>Setzt eine Eigenschaft eines Items, z.B. in der Registry.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<p><strong>Beispiel für <code class="inline-code">Get-ChildItem</code>:</strong></p>
+</li>
+</ol>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="" data-joplin-source-open="```&#10;" data-joplin-source-close="&#10;```">powershell
+  Get-ChildItem C:\Windows</pre><pre class="hljs"><code><span class="hljs-symbol">powershell</span>
+  <span class="hljs-meta">Get</span>-ChildItem C:\Windows</code></pre></div>
+<p><strong>Beispiel für ‘Set-ItemProperty’:</strong></p>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="" data-joplin-source-open="```&#10;" data-joplin-source-close="&#10;```">powershell
+Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' -Name 'Hidden' -Value 1</pre><pre class="hljs"><code>powershell
+<span class="hljs-keyword">Set</span>-ItemProperty -Path <span class="hljs-string">&#x27;HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced&#x27;</span> -<span class="hljs-keyword">Name</span> <span class="hljs-string">&#x27;Hidden&#x27;</span> -Value <span class="hljs-number">1</span></code></pre></div>
+</div></div>
+					</body>
+				</html>
+			

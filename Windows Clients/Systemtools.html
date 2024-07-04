@@ -1,0 +1,191 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<title>Systemtools</title>
+						<link rel="stylesheet" href="pluginAssets/styles.css">
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">Systemtools</div>
+
+                        <hr>
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="Active Directory.html">Active Directory</a></li>
+                                <li><a href="Anleitung zur Einrichtung eines VPN in Windows 10.html">Einrichtung eines VPN in Windows 10</a></li>
+                                <li><a href="Anleitung zur Verwendung der Datenträgerverwaltung.html">Verwendung der Datenträgerverwaltung</a></li>
+                                <li><a href="Authentifizierungsmethoden in Windows 10 und 11.html">Authentifizierungsmethoden</a></li>
+                                <li><a href="Bedrohungsschutz-Tools.html">Bedrohungsschutz-Tools</a></li>
+                                <li ><a href="Dateisysteme verstehen.html">Dateisysteme verstehen</a></li>
+                                <li><a href="Datenträgerverwaltung in Windows 10_11.html">Datenträgerverwaltung</a></li>
+                                <li><a href="Desktop-Apps vs. Store-Apps und Alternativen.html">Desktop-Apps vs. Store-Apps</a></li>
+                                <li><a href="Edge_IE.html">Edge_IE</a></li>
+                                <li><a href="Einrichtung eines virtuellen Windows 10 in Hyper-V.html">Hyper-V Einrichtung</a></li>
+                                <li><a href="FAQ zur Freigabe von Ordnern.html">FAQ zur ordnerfreigabe</a></li>
+                                <li ><a href="Gruppenrichtlinien.html">Gruppenrichtlinien</a></li>
+                                <li><a href="In Windows 10 verfügbaren Dateisysteme.html">Verfügbaren Dateisysteme</a></li>
+                                <li><a href="In-Place-Upgrade.html">In-Place-Upgrade</a></li>
+                                <li><a href="Installation, Bereitstellung, Migration, Update.html">Installation, Bereitstellung,Update</a></li>
+                                <li><a href="Migrationstechniken.html">Migrationstechniken</a></li>
+                                <li><a href="NAS und übliche Zugriffsprotokolle für Windows 10_.html">NAS und Zugriffsprotokolle</a></li>
+                                <li><a href="Provisionierung.html">Provisionierung</a></li>
+                                <li><a href="Schritt-für-Schritt-Anleitung zur Konfiguration ei.html">Konfiguration WLAN</a></li>
+                                <li><a href="Softwareverteilung.html">Softwareverteilunng</a></li>
+                                <li><a href="Startmenü.html">Startmenü</a></li>
+                                <li><a href="Support Tools in Windows.html">Support-Tools</a></li>
+                                <li><a href="System-Einstellungen finden und Suche verwenden.html">System-Einstellungen</a></li>
+                                <li class="current-page"><a href="Systemtools.html">Systemtools</a></li>
+                                <li><a href="Übersicht der verschiedenen Speicherarten.html">Speicherarten</a></li>
+                                <li><a href="Übersicht der verschiedenen Windows 10 Editionen.html">Windows 10 Editionen</a></li>
+                                <li><a href="Unterschiedliche Windows Editionen analysieren.html">Analyse Windows 10 Editionen</a></li>
+                                <li><a href="Übersicht über Powershell, Gruppenrichtlinien und .html">Powershell</a></li>
+                            </ul>
+                        </nav>
+                        <hr>
+
+<div id="rendered-md"><h1 id="systemtools-zur-diagnose-und-behebung-von-problemen-in-windows-10-und-11">Systemtools zur Diagnose und Behebung von Problemen in Windows 10 und 11</h1>
+<h2 id="task-manager">Task-Manager</h2>
+<h3 id="anwendung">Anwendung</h3>
+<ol>
+<li><strong>Öffnen</strong>: Strg + Shift + Esc oder Rechtsklick auf die Taskleiste und “Task-Manager” wählen.</li>
+<li><strong>Prozesse überwachen</strong>: Überwachen von CPU-, Speicher-, Festplatten- und Netzwerk-Auslastung.</li>
+<li><strong>Leistungsüberwachung</strong>: Überwachung der Systemleistung in Echtzeit.</li>
+<li><strong>Autostart-Programme verwalten</strong>: Unter “Autostart” die Programme einsehen und deaktivieren, die beim Systemstart geladen werden.</li>
+<li><strong>Laufende Anwendungen und Prozesse beenden</strong>: Hängende oder nicht reagierende Programme und Prozesse beenden.</li>
+</ol>
+<h3 id="verwendung-zur-fehlerbehebung">Verwendung zur Fehlerbehebung</h3>
+<ul>
+<li><strong>Hohe CPU-Auslastung</strong>: Identifizieren und Beenden ressourcenintensiver Prozesse.</li>
+<li><strong>Langsame Systemleistung</strong>: Identifizieren von Prozessen, die den Speicher oder die Festplatte überlasten.</li>
+<li><strong>Systemstart beschleunigen</strong>: Deaktivieren unnötiger Autostart-Programme.</li>
+</ul>
+<h2 id="msconfig-systemkonfiguration">MSConfig (Systemkonfiguration)</h2>
+<h3 id="anwendung-2">Anwendung</h3>
+<ol>
+<li><strong>Öffnen</strong>: Win + R drücken, <code class="inline-code">msconfig</code> eingeben und Enter drücken.</li>
+<li><strong>Startkonfiguration</strong>: Unter “Start” den Startmodus (Normaler Start, Diagnosesystemstart, Benutzerdefinierter Systemstart) wählen.</li>
+<li><strong>Dienste verwalten</strong>: Unter “Dienste” die Systemdienste einsehen und deaktivieren.</li>
+<li><strong>Autostart verwalten</strong>: Unter “Systemstart” Programme verwalten (weitergeleitet zum Task-Manager in Windows 10/11).</li>
+</ol>
+<h3 id="verwendung-zur-fehlerbehebung-2">Verwendung zur Fehlerbehebung</h3>
+<ul>
+<li><strong>Boot-Probleme</strong>: Im abgesicherten Modus starten zur Fehlerdiagnose.</li>
+<li><strong>Diagnose</strong>: Systemdienste deaktivieren, um zu testen, ob ein Dienst das Problem verursacht.</li>
+<li><strong>Startkonfiguration ändern</strong>: Fehlerhafte Autostart-Programme deaktivieren.</li>
+</ul>
+<h2 id="ereignisanzeige-event-viewer">Ereignisanzeige (Event Viewer)</h2>
+<h3 id="anwendung-3">Anwendung</h3>
+<ol>
+<li><strong>Öffnen</strong>: Win + X drücken und “Ereignisanzeige” wählen.</li>
+<li><strong>Systemprotokolle einsehen</strong>: Unter “Windows-Protokolle” die Abschnitte “Anwendung”, “Sicherheit”, “Setup”, “System” und “Ereignisweiterleitung” einsehen.</li>
+<li><strong>Fehler und Warnungen analysieren</strong>: Fehler und Warnungen in den Protokollen suchen und Details einsehen.</li>
+</ol>
+<h3 id="verwendung-zur-fehlerbehebung-3">Verwendung zur Fehlerbehebung</h3>
+<ul>
+<li><strong>Systemabstürze</strong>: Protokolle einsehen, um die Ursache von Abstürzen und Fehlern zu identifizieren.</li>
+<li><strong>Software- und Treiberprobleme</strong>: Fehlerprotokolle analysieren, um Probleme mit spezifischen Anwendungen oder Treibern zu diagnostizieren.</li>
+<li><strong>Überwachung und Sicherheitsanalyse</strong>: Sicherheitsprotokolle überwachen, um ungewöhnliche Aktivitäten zu erkennen.</li>
+</ul>
+<h2 id="microsoft-management-console-mmc">Microsoft Management Console (MMC)</h2>
+<h3 id="anwendung-4">Anwendung</h3>
+<ol>
+<li><strong>Öffnen</strong>: Win + R drücken, <code class="inline-code">mmc</code> eingeben und Enter drücken.</li>
+<li><strong>Snap-Ins hinzufügen</strong>: Unter “Datei” &gt; “Snap-In hinzufügen/entfernen” verschiedene Verwaltungstools wie “Geräte-Manager”, “Leistungsüberwachung”, “Ereignisanzeige” usw. hinzufügen.</li>
+<li><strong>Individuelle Verwaltungskonsolen erstellen</strong>: Snap-Ins nach Bedarf kombinieren und speichern.</li>
+</ol>
+<h3 id="verwendung-zur-fehlerbehebung-4">Verwendung zur Fehlerbehebung</h3>
+<ul>
+<li><strong>Zentrale Verwaltung</strong>: Verschiedene Verwaltungstools in einer Konsole zentral nutzen.</li>
+<li><strong>Individuelle Fehleranalyse</strong>: Spezifische Snap-Ins nutzen, um detaillierte Systeminformationen zu erhalten und Probleme gezielt zu analysieren.</li>
+</ul>
+<h1 id="entscheidungsbaum-zur-fehlerdiagnose">Entscheidungsbaum zur Fehlerdiagnose</h1>
+<h1 id="entscheidungsbaum-zur-fehlerdiagnose-2">Entscheidungsbaum zur Fehlerdiagnose</h1>
+<div class="joplin-editable"><pre class="joplin-source" data-joplin-language="plaintext" data-joplin-source-open="```plaintext&#10;" data-joplin-source-close="&#10;```">[Systemproblem]
+    --&gt; [PC startet nicht]
+        --&gt; (Ja) 
+            --&gt; [Abgesicherter Modus starten]
+                --&gt; (Erfolgreich?)
+                    --&gt; (Ja) 
+                        --&gt; [Autostartprogramme überprüfen]
+                            --&gt; (Problem gefunden?)
+                                --&gt; (Ja) 
+                                    --&gt; [Programm deaktivieren]
+                                --&gt; (Nein) 
+                                    --&gt; [Treiberprobleme überprüfen]
+                    --&gt; (Nein) 
+                        --&gt; [Systemwiederherstellung durchführen]
+        --&gt; (Nein) 
+            --&gt; [Netzwerk- und Hardwareverbindungen überprüfen]
+            --&gt; [Boot-Medium prüfen (USB, DVD)]
+            --&gt; [BIOS-Einstellungen überprüfen]
+
+    --&gt; [PC startet, aber reagiert langsam]
+        --&gt; [Task-Manager öffnen]
+            --&gt; [Prozesse überwachen]
+                --&gt; [Ressourcenintensive Prozesse identifizieren]
+                --&gt; [Nicht benötigte Prozesse beenden]
+                --&gt; [Autostartprogramme deaktivieren]
+
+    --&gt; [Spezifische Fehlermeldung]
+        --&gt; [Ereignisanzeige öffnen]
+            --&gt; [Fehlerprotokolle analysieren]
+            --&gt; [Lösungen basierend auf Protokollen umsetzen]
+
+    --&gt; [Netzwerkprobleme]
+        --&gt; [Netzwerk- und Freigabecenter öffnen]
+            --&gt; [Netzwerkadapter überprüfen]
+            --&gt; [Problembehandlung ausführen]
+            --&gt; [Router/Modem neu starten]
+
+    --&gt; [Hardwareprobleme]
+        --&gt; [Geräte-Manager öffnen]
+            --&gt; [Fehlerhafte Geräte überprüfen]
+            --&gt; [Treiber aktualisieren oder Gerät ersetzen]</pre><pre class="hljs"><code>[Systemproblem]
+    --&gt; [PC startet nicht]
+        --&gt; (Ja) 
+            --&gt; [Abgesicherter Modus starten]
+                --&gt; (Erfolgreich?)
+                    --&gt; (Ja) 
+                        --&gt; [Autostartprogramme überprüfen]
+                            --&gt; (Problem gefunden?)
+                                --&gt; (Ja) 
+                                    --&gt; [Programm deaktivieren]
+                                --&gt; (Nein) 
+                                    --&gt; [Treiberprobleme überprüfen]
+                    --&gt; (Nein) 
+                        --&gt; [Systemwiederherstellung durchführen]
+        --&gt; (Nein) 
+            --&gt; [Netzwerk- und Hardwareverbindungen überprüfen]
+            --&gt; [Boot-Medium prüfen (USB, DVD)]
+            --&gt; [BIOS-Einstellungen überprüfen]
+
+    --&gt; [PC startet, aber reagiert langsam]
+        --&gt; [Task-Manager öffnen]
+            --&gt; [Prozesse überwachen]
+                --&gt; [Ressourcenintensive Prozesse identifizieren]
+                --&gt; [Nicht benötigte Prozesse beenden]
+                --&gt; [Autostartprogramme deaktivieren]
+
+    --&gt; [Spezifische Fehlermeldung]
+        --&gt; [Ereignisanzeige öffnen]
+            --&gt; [Fehlerprotokolle analysieren]
+            --&gt; [Lösungen basierend auf Protokollen umsetzen]
+
+    --&gt; [Netzwerkprobleme]
+        --&gt; [Netzwerk- und Freigabecenter öffnen]
+            --&gt; [Netzwerkadapter überprüfen]
+            --&gt; [Problembehandlung ausführen]
+            --&gt; [Router/Modem neu starten]
+
+    --&gt; [Hardwareprobleme]
+        --&gt; [Geräte-Manager öffnen]
+            --&gt; [Fehlerhafte Geräte überprüfen]
+            --&gt; [Treiber aktualisieren oder Gerät ersetzen]</code></pre></div>
+</div></div>
+					</body>
+				</html>
+			

@@ -1,0 +1,256 @@
+
+				<!DOCTYPE html>
+				<html>
+					<head>
+						<meta charset="UTF-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1" />
+						<link rel="stylesheet" href="pluginAssets/highlight.js/atom-one-light.css">
+						<link rel="stylesheet" href="pluginAssets/styles.css">
+						<title>Softwareverteilung</title>
+					</head>
+					<body>
+						<div class="exported-note"><div class="exported-note-title">Softwareverteilung</div>
+
+						
+						<hr>
+                        <nav>
+                            <ul class="nav-links">
+                                <li><a href="/index.html">Home</a></li>
+                                <li><a href="Active Directory.html">Active Directory</a></li>
+                                <li><a href="Anleitung zur Einrichtung eines VPN in Windows 10.html">Einrichtung eines VPN in Windows 10</a></li>
+                                <li><a href="Anleitung zur Verwendung der Datenträgerverwaltung.html">Verwendung der Datenträgerverwaltung</a></li>
+                                <li><a href="Authentifizierungsmethoden in Windows 10 und 11.html">Authentifizierungsmethoden</a></li>
+                                <li><a href="Bedrohungsschutz-Tools.html">Bedrohungsschutz-Tools</a></li>
+                                <li ><a href="Dateisysteme verstehen.html">Dateisysteme verstehen</a></li>
+                                <li><a href="Datenträgerverwaltung in Windows 10_11.html">Datenträgerverwaltung</a></li>
+                                <li><a href="Desktop-Apps vs. Store-Apps und Alternativen.html">Desktop-Apps vs. Store-Apps</a></li>
+                                <li><a href="Edge_IE.html">Edge_IE</a></li>
+                                <li><a href="Einrichtung eines virtuellen Windows 10 in Hyper-V.html">Hyper-V Einrichtung</a></li>
+                                <li><a href="FAQ zur Freigabe von Ordnern.html">FAQ zur ordnerfreigabe</a></li>
+                                <li ><a href="Gruppenrichtlinien.html">Gruppenrichtlinien</a></li>
+                                <li><a href="In Windows 10 verfügbaren Dateisysteme.html">Verfügbaren Dateisysteme</a></li>
+                                <li><a href="In-Place-Upgrade.html">In-Place-Upgrade</a></li>
+                                <li><a href="Installation, Bereitstellung, Migration, Update.html">Installation, Bereitstellung,Update</a></li>
+                                <li><a href="Migrationstechniken.html">Migrationstechniken</a></li>
+                                <li><a href="NAS und übliche Zugriffsprotokolle für Windows 10_.html">NAS und Zugriffsprotokolle</a></li>
+                                <li><a href="Provisionierung.html">Provisionierung</a></li>
+                                <li><a href="Schritt-für-Schritt-Anleitung zur Konfiguration ei.html">Konfiguration WLAN</a></li>
+                                <li  class="current-page"><a href="Softwareverteilung.html">Softwareverteilunng</a></li>
+                                <li><a href="Startmenü.html">Startmenü</a></li>
+                                <li><a href="Support Tools in Windows.html">Support-Tools</a></li>
+                                <li><a href="System-Einstellungen finden und Suche verwenden.html">System-Einstellungen</a></li>
+                                <li><a href="Systemtools.html">Systemtools</a></li>
+                                <li><a href="Übersicht der verschiedenen Speicherarten.html">Speicherarten</a></li>
+                                <li><a href="Übersicht der verschiedenen Windows 10 Editionen.html">Windows 10 Editionen</a></li>
+                                <li><a href="Unterschiedliche Windows Editionen analysieren.html">Analyse Windows 10 Editionen</a></li>
+                                <li><a href="Übersicht über Powershell, Gruppenrichtlinien und .html">Powershell</a></li>
+                            </ul>
+                        </nav>
+                        <hr>
+
+<div id="rendered-md"><p>Die Softwareverteilung ist der Prozess der Installation, Deinstallation und Aktualisierung von Software auf mehreren Computern in einem Netzwerk. Sie kann manuell oder mithilfe von Tools zur Softwareverteilung erfolgen.</p>
+<p>Der Einsatz von Tools zur Softwareverteilung bietet mehrere Vorteile, darunter:</p>
+<p>**Effizienz:**Die Verteilung von Software kann automatisiert werden, wodurch Zeit und Arbeitsaufwand gespart werden.</p>
+<p><strong>Konsistenz:</strong> Alle Systeme im Netzwerk können mit derselben Softwarekonfiguration ausgestattet werden, was die Fehlerbehebung vereinfacht.</p>
+<p><strong>Sicherheit:</strong> Software-Patches und Updates können schnell und zuverlässig bereitgestellt werden, um Sicherheitsrisiken zu minimieren.</p>
+<p><strong>Compliance:</strong> Die Einhaltung von Unternehmensrichtlinien und gesetzlichen Vorschriften kann durch die zentrale Verwaltung von Softwarelizenzen erleichtert werden.</p>
+<hr>
+<h2 id="wsus-windows-server-update-services">WSUS (Windows Server Update Services)</h2>
+<p>WSUS ist ein kostenloses Tool von Microsoft, mit dem Windows-Updates in einem Netzwerk verteilt werden können. Es ist eine gute Wahl für kleine und mittlere Unternehmen, die eine einfache und kostengünstige Lösung suchen.</p>
+<p>Zielgruppe: Windows-Netzwerke</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Features</th>
+<th>Vorteile</th>
+<th>Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verteilung von Windows-Updates</td>
+<td>Kostenlos</td>
+<td>Nur für Windows-Updates geeignet</td>
+</tr>
+<tr>
+<td>Konfigurierbare Update-Zeitpläne</td>
+<td>Einfach zu bedienen</td>
+<td>Weniger Funktionen als kommerzielle Tools</td>
+</tr>
+<tr>
+<td>Gruppenbasierte Verteilung</td>
+<td>Integriert mit Windows Server</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Berichte und Protokollierung</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="chocolatey">Chocolatey</h2>
+<p>Chocolatey ist ein Paketverwaltungssystem für Windows, das die Installation und Verwaltung von Software vereinfacht. Es ist eine gute Wahl für Entwickler und IT-Profis, die eine schnelle und einfache Möglichkeit suchen, Software auf ihren Computern zu installieren.</p>
+<p>Zielgruppe: Windows-Benutzer</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Features</th>
+<th>Vorteile</th>
+<th>Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Installation von Software mit Befehlszeilenbefehlen</td>
+<td>Schnell und einfach zu bedienen</td>
+<td>Nur für Windows verfügbar</td>
+</tr>
+<tr>
+<td>Deinstallation von Software</td>
+<td>Große Auswahl an Softwarepaketen</td>
+<td>Weniger ausgereift als kommerzielle Tools</td>
+</tr>
+<tr>
+<td>Aktualisierung von Software</td>
+<td>Kostenlose Open-Source-Software</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Suche nach Softwarepaketen</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="ansible">Ansible</h2>
+<p>Ansible ist ein Open-Source-Tool zur IT-Automatisierung, mit dem auch Softwareverteilung durchgeführt werden kann. Es ist eine gute Wahl für Unternehmen, die eine flexible und skalierbare Lösung suchen.</p>
+<p>Zielgruppe: IT-Profis mit Erfahrung in Python</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Features</th>
+<th>Vorteile</th>
+<th>Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Automatisierung von IT-Aufgaben mithilfe von Playbooks</td>
+<td>Flexibel und skalierbar</td>
+<td>Erfordert Python-Kenntnisse</td>
+</tr>
+<tr>
+<td>Verteilung von Software auf verschiedene Plattformen</td>
+<td>Open-Source-Software</td>
+<td>Steile Lernkurve</td>
+</tr>
+<tr>
+<td>Konfigurationsmanagement</td>
+<td>Große Community</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Inventarisierung von IT-Assets</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="microsoft-configuration-manager-sccm">Microsoft Configuration Manager (SCCM)</h2>
+<p>Microsoft Configuration Manager (SCCM) ist ein kommerzielles Tool zur IT-Verwaltung, mit dem auch Softwareverteilung durchgeführt werden kann. Es ist eine gute Wahl für große Unternehmen, die eine umfassende Lösung für die Verwaltung ihrer IT-Infrastruktur benötigen.</p>
+<p>Zielgruppe: Große Unternehmen mit Windows-Umgebungen</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Features</th>
+<th>Vorteile</th>
+<th>Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verteilung von Software auf Windows- und macOS-Geräten</td>
+<td>Umfassende Funktionen</td>
+<td>Hohe Kosten</td>
+</tr>
+<tr>
+<td>Konfigurationsmanagement</td>
+<td>Integration mit anderen Microsoft-Produkten</td>
+<td>Komplex und schwer zu erlernen</td>
+</tr>
+<tr>
+<td>Remote-Steuerung von Computern</td>
+<td>Guter Support</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Geräte-Inventarisierung</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Patch-Management</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+<h2 id="novell-zenworks-teil-des-configuration-management">Novell ZENworks (Teil des Configuration Management)</h2>
+<p>Novell ZENworks ist ein kommerzielles Tool zur IT-Verwaltung, mit dem auch Softwareverteilung durchgeführt werden kann. Es ist eine gute Wahl für Unternehmen, die eine einheitliche Lösung für die Verwaltung von Windows-, Linux- und macOS-Geräten benötigen.</p>
+<p>Zielgruppe: Unternehmen mit gemischten Umgebungen (Windows, Linux, macOS)</p>
+<div class="joplin-table-wrapper">
+<table>
+<thead>
+<tr>
+<th>Features</th>
+<th>Vorteile</th>
+<th>Nachteile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Verteilung von Software auf Windows-, Linux- und macOS-Geräten</td>
+<td>Umfassende Funktionen</td>
+<td>Hohe Kosten</td>
+</tr>
+<tr>
+<td>Konfigurationsmanagement</td>
+<td>Einheitliche Lösung für verschiedene Plattformen</td>
+<td>Komplex und schwer zu erlernen</td>
+</tr>
+<tr>
+<td>Remote-Steuerung von Computern</td>
+<td>Guter Support</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Geräte-Inventarisierung</td>
+<td>-</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Patch-Management</td>
+<td>-</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+</div>
+<hr>
+</div></div>
+					</body>
+				</html>
+			
